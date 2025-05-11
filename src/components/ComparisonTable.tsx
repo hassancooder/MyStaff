@@ -1,0 +1,210 @@
+import React from "react";
+
+const ComparisonTable: React.FC = () => {
+  const features = [
+    {
+      name: (
+        <>
+          <b>. Document creation</b>, <br />
+          approval & author reminders
+        </>
+      ),
+      competitors: {
+        mystaff: true,
+        fatfinger: false,
+        intelex: false,
+        formopx: false,
+        frontline: false,
+      },
+    },
+    {
+      name: (
+        <>
+          <b>. Automated version control</b>, <br />& document history
+        </>
+      ),
+      competitors: {
+        mystaff: true,
+        fatfinger: false,
+        intelex: true,
+        formopx: false,
+        frontline: false,
+      },
+    },
+    {
+      name: (
+        <>
+          <b>. Auto-categorization</b>, <br /> & tagging (AI based)
+        </>
+      ),
+      competitors: {
+        mystaff: true,
+        fatfinger: false,
+        intelex: false,
+        formopx: false,
+        frontline: false,
+      },
+    },
+    {
+      name: (
+        <>
+          <b>. Searchable PDF</b>, <br /> rendering with mobile optimization
+        </>
+      ),
+      competitors: {
+        mystaff: true,
+        fatfinger: false,
+        intelex: false,
+        formopx: false,
+        frontline: false,
+      },
+    },
+    {
+      name: (
+        <>
+          <b>. Staff alerts</b>, <br /> for new/updated documents
+        </>
+      ),
+      competitors: {
+        mystaff: true,
+        fatfinger: false,
+        intelex: false,
+        formopx: false,
+        frontline: false,
+      },
+    },
+    {
+      name: (
+        <>
+          <b>. Mobile-friendly</b>, <br /> policy guidelines with tests
+        </>
+      ),
+      competitors: {
+        mystaff: true,
+        fatfinger: true,
+        intelex: false,
+        formopx: false,
+        frontline: false,
+      },
+    },
+    {
+      name: (
+        <>
+          <b>. Audit-ready access logs</b>, <br /> & compliance tracking
+        </>
+      ),
+      competitors: {
+        mystaff: true,
+        fatfinger: false,
+        intelex: true,
+        formopx: false,
+        frontline: false,
+      },
+    },
+    {
+      name: (
+        <>
+          <b>. Offline access </b>, <br /> to critical compliance documents
+        </>
+      ),
+      competitors: {
+        mystaff: true,
+        fatfinger: false,
+        intelex: false,
+        formopx: false,
+        frontline: false,
+      },
+    },
+  ];
+
+  return (
+    <section className="py-16 px-4 sm:px-6 lg:px-10 bg-gray-50">
+      <div className="container mx-auto">
+        <h1 className="text-2xl sm:text-3xl font-bold text-blue-800 mb-2">
+          Document Management & Compliance
+        </h1>
+        <h2 className="text-2xl sm:text-3xl font-bold text-blue-600 mb-6">
+          - comparison
+        </h2>
+
+        <div className="text-start mb-10">
+          <img
+            src="./line.png"
+            alt="Line"
+            className="w-[120px] sm:w-[150px] ml-[-10px] sm:ml-[-20px]"
+          />
+        </div>
+
+        <p className="text-blue-800 mb-8 max-w-3xl text-base sm:text-lg">
+          MyStaff app stands out with dedicated features for document lifecycle
+          control, regulatory compliance, and ease of access in both field and
+          office environments critical to highly regulated industries.
+        </p>
+
+        <div className="overflow-x-auto">
+          <table className="min-w-[700px] w-full border-collapse text-sm sm:text-base">
+            <thead>
+              <tr>
+                <th className="text-blue-800 text-left text-lg p-4 bg-amber-400 border border-gray-300 min-w-[220px]">
+                  Document Management
+                  <br />& Compliance Feature
+                </th>
+                <th className="text-blue-800 text-center text-lg p-4 bg-amber-400 border border-gray-300 min-w-[100px]">
+                  <div className="flex justify-center mb-2">
+                    <img
+                      src="./logo.png"
+                      alt="Logo"
+                      className="h-12 w-12 sm:h-[100px] sm:w-[100px]"
+                    />
+                  </div>
+                </th>
+                <th className="text-blue-800 text-center text-lg p-4 bg-amber-400 border border-gray-300">
+                  Fat Finger
+                </th>
+                <th className="text-blue-800 text-center text-lg p-4 bg-amber-400 border border-gray-300">
+                  Intelex
+                </th>
+                <th className="text-blue-800 text-center text-lg p-4 bg-amber-400 border border-gray-300">
+                  Form OpX
+                </th>
+                <th className="text-blue-800 text-center text-lg p-4 bg-amber-400 border border-gray-300">
+                  Frontline Data
+                  <br />
+                  Solutions
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {features.map((feature, index) => (
+                <tr
+                  key={index}
+                  className={index % 2 === 0 ? "bg-white" : "bg-gray-50"}
+                >
+                  <td className="p-3 border border-gray-300 text-blue-900">
+                    <div className="ml-2 text-blue-600">{feature.name}</div>
+                  </td>
+                  {Object.entries(feature.competitors).map(
+                    ([key, value], idx) => (
+                      <td
+                        key={idx}
+                        className="p-3 border border-gray-300 text-center"
+                      >
+                        <img
+                          src={value ? "./tick.png" : "./cross.png"}
+                          alt={value ? "tick" : "cross"}
+                          className="h-8 w-8 sm:h-[50px] sm:w-[50px] mx-auto"
+                        />
+                      </td>
+                    )
+                  )}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ComparisonTable;
