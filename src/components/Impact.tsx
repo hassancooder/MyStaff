@@ -35,7 +35,7 @@ const Impact: React.FC = () => {
                 className="w-[120px] h-auto ml-[-20px]"
               />
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-20">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-0 sm:mb-20">
               {impacts.map((impact) => (
                 <div key={impact.id} className="flex items-center gap-3">
                   <img
