@@ -5,7 +5,7 @@ const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="fixed w-full z-50 transition-all duration-300 bg-white shadow-md py-4">
+    <header className="h-auto fixed top-0 w-full z-50 transition-all duration-300 bg-white shadow-md py-4">
       <div className="container mx-auto px-8 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex items-center">

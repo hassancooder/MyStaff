@@ -14,10 +14,10 @@ const ModuleCard: React.FC<ModuleCardProps> = ({
   return (
     <div className="group relative overflow-hidden transform transition-all duration-300 hover:-translate-y-2">
       <div
-        className="bg-center bg-cover bg-no-repeat p-6 h-[45vh] flex flex-col items-center text-center z-100"
+        className="bg-center bg-contain bg-no-repeat p-6 h-[45vh] flex flex-col items-center text-center z-100"
         style={{ backgroundImage: "url('./cardBottom.png')" }}
       >
-        <div className="mb-4 h-48 -mt-8">
+        <div className="mb-4 mt-[-28px] h-[120px] self-start pl-8">
           <img
             src={`./product${productId}.png`}
             alt="MyStaff App"

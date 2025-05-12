@@ -3,7 +3,7 @@ import React from "react";
 const Hero: React.FC = () => {
   return (
     <section
-      className="text-white h-[110vh] w-full overflow-hidden bg-cover bg-center flex items-center"
+      className="text-white h-[110vh] w-full overflow-hidden bg-cover bg-top flex items-center"
       style={{
         backgroundImage: "url('./Hero.png')",
       }}

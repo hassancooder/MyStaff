@@ -142,32 +142,32 @@ const ComparisonTable: React.FC = () => {
         </p>
 
         <div className="overflow-x-auto">
-          <table className="min-w-[700px] w-full border-collapse text-sm sm:text-base">
+          <table className="min-w-[700px] w-full border-collapse border border-blue-600 text-sm sm:text-base">
             <thead>
               <tr>
-                <th className="text-blue-800 text-left text-lg p-4 bg-amber-400 border border-gray-300 min-w-[220px]">
+                <th className="text-blue-800 text-left text-lg p-4 bg-amber-400  border-blue-600 border-[2px] min-w-[220px]">
                   Document Management
                   <br />& Compliance Feature
                 </th>
-                <th className="text-blue-800 text-center text-lg p-4 bg-amber-400 border border-gray-300 min-w-[100px]">
-                  <div className="flex justify-center mb-2">
+                <th className="text-blue-800 text-center text-lg p-4 bg-amber-400  border-blue-600 border-[2px] min-w-[100px]">
+                  <div className="flex justify-center">
                     <img
                       src="./logo.png"
                       alt="Logo"
-                      className="h-12 w-12 sm:h-[100px] sm:w-[100px]"
+                      className="h-12 w-12 sm:h-[100px] sm:w-[180px]"
                     />
                   </div>
                 </th>
-                <th className="text-blue-800 text-center text-lg p-4 bg-amber-400 border border-gray-300">
+                <th className="text-blue-800 text-center text-lg p-4 bg-amber-400  border-blue-600 border-[2px]">
                   Fat Finger
                 </th>
-                <th className="text-blue-800 text-center text-lg p-4 bg-amber-400 border border-gray-300">
+                <th className="text-blue-800 text-center text-lg p-4 bg-amber-400  border-blue-600 border-[2px]">
                   Intelex
                 </th>
-                <th className="text-blue-800 text-center text-lg p-4 bg-amber-400 border border-gray-300">
+                <th className="text-blue-800 text-center text-lg p-4 bg-amber-400  border-blue-600 border-[2px]">
                   Form OpX
                 </th>
-                <th className="text-blue-800 text-center text-lg p-4 bg-amber-400 border border-gray-300">
+                <th className="text-blue-800 text-center text-lg p-4 bg-amber-400  border-blue-600 border-[2px]">
                   Frontline Data
                   <br />
                   Solutions
@@ -180,14 +180,14 @@ const ComparisonTable: React.FC = () => {
                   key={index}
                   className={index % 2 === 0 ? "bg-white" : "bg-gray-50"}
                 >
-                  <td className="p-3 border border-gray-300 text-blue-900">
+                  <td className="p-3  border-blue-600 border-[2px] text-blue-900">
                     <div className="ml-2 text-blue-600">{feature.name}</div>
                   </td>
                   {Object.entries(feature.competitors).map(
                     ([key, value], idx) => (
                       <td
                         key={idx}
-                        className="p-3 border border-gray-300 text-center"
+                        className="p-3  border-blue-600 border-[2px] text-center"
                       >
                         <img
                           src={value ? "./tick.png" : "./cross.png"}
