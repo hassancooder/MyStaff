@@ -14,9 +14,11 @@ const Hero: React.FC = () => {
             MyStaff app
           </h1>
           <h2 className="text-lg sm:text-xl md:text-2xl font-medium mb-6 leading-relaxed">
-            Do your frontline staff know
+            Are your frontline
             <br className="hidden md:block" />
-            the latest regulations?
+            staff on top of changing
+            <br className="hidden md:block" />
+            regulations?
           </h2>
           <div className="flex gap-2 items-center justify-start my-8 sm:ml-[-30px]">
             <img
