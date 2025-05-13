@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-20">
         <div className="max-w-2xl flex flex-col">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium mb-6 leading-relaxed">
+          <h2 className="text-2xl sm:text-3xl  md:text-4xl font-semibold mb-6 leading-tight">
             Are your frontline
             <br />
             staff on top of changing
