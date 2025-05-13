@@ -9,15 +9,12 @@ const Hero: React.FC = () => {
       }}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-20">
-        <div className="max-w-2xl flex flex-col gap-2">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 leading-tight">
-            MyStaff app
-          </h1>
-          <h2 className="text-lg sm:text-xl md:text-2xl font-medium mb-6 leading-relaxed">
+        <div className="max-w-2xl flex flex-col">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium mb-6 leading-relaxed">
             Are your frontline
-            <br className="hidden md:block" />
+            <br />
             staff on top of changing
-            <br className="hidden md:block" />
+            <br />
             regulations?
           </h2>
           <div className="flex gap-2 items-center justify-start my-8 sm:ml-[-30px]">
@@ -31,7 +28,7 @@ const Hero: React.FC = () => {
             </p>
           </div>
 
-          <button className="bg-blue-600 text-white max-w-[200px] font-medium px-6 py-3 rounded-md transition-all duration-300 transform hover:scale-105">
+          <button className="bg-blue-700 text-white max-w-[200px] font-medium px-6 py-3 rounded-md transition-all duration-300 transform hover:scale-105">
             Request a Demo
           </button>
         </div>
