@@ -21,7 +21,7 @@ const Impact: React.FC = () => {
   ];
 
   return (
-    <section className="bg-white overflow-hidden mt-10 px-4 md:px-10">
+    <section className="bg-white overflow-hidden mt-10  md:px-10">
       <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center">
         <div className="w-full lg:w-1/2 flex flex-col">
           <div className="flex flex-col mb-8">
@@ -51,7 +51,7 @@ const Impact: React.FC = () => {
             </div>
           </div>
 
-          <div className="bg-blue-600 text-white px-6 sm:px-10 py-2 rounded-lg">
+          <div className="bg-blue-600 text-white px-6 sm:px-10 py-4  sm:rounded-lg">
             <h3 className="text-xl sm:text-2xl font-bold text-yellow-400 mb-3">
               Let’s Talk
             </h3>
