@@ -51,7 +51,7 @@ const Impact: React.FC = () => {
             </div>
           </div>
 
-          <div className="bg-blue-600 text-white px-6 sm:px-10 py-6 rounded-lg">
+          <div className="bg-blue-600 text-white px-6 sm:px-10 py-2 rounded-lg">
             <h3 className="text-xl sm:text-2xl font-bold text-yellow-400 mb-3">
               Let’s Talk
             </h3>
