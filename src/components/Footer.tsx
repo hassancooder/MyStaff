@@ -2,12 +2,12 @@ import React from "react";
 
 const Footer: React.FC = () => {
   return (
-    <footer id="contact" className="bg-gray-900 text-white py-6">
+    <footer id="contact" className="bg-black text-white py-6 h-auto w-full">
       <div className="container mx-auto px-4">
         <div className="text-center">
-          <p className="text-gray-400 text-sm">
+          <h2 className="text-md font-bold sm:text-lg">
             © 2025 Diligram. All rights reserved.
-          </p>
+          </h2>
         </div>
       </div>
     </footer>

@@ -154,7 +154,7 @@ const ComparisonTable: React.FC = () => {
                     <img
                       src="./logo.png"
                       alt="Logo"
-                      className="h-12 w-12 sm:h-[100px] sm:w-[180px]"
+                      className="h-90px w-180px sm:h-[100px] sm:w-[180px]"
                     />
                   </div>
                 </th>

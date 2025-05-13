@@ -12,21 +12,27 @@ const ModuleCard: React.FC<ModuleCardProps> = ({
   productId,
 }) => {
   return (
-    <div className="group relative overflow-hidden transform transition-all duration-300 hover:-translate-y-2">
+    <div className="group relative overflow-hidden transform transition-transform duration-300 hover:-translate-y-2">
       <div
-        className="bg-center bg-contain bg-no-repeat p-6 h-[45vh] flex flex-col items-center text-center z-100"
+        className="bg-center bg-contain bg-no-repeat p-4 h-full flex flex-col items-center lg:items-start text-center lg:text-left"
         style={{ backgroundImage: "url('./cardBottom.png')" }}
       >
-        <div className="mb-4 mt-[-28px] h-[120px] self-start pl-8">
+        <div className="w-full relative flex justify-center lg:justify-start mb-4">
           <img
             src={`./product${productId}.png`}
             alt="MyStaff App"
-            className="object-contain w-full h-full shadow-md z-10 "
+            className="object-contain w-[100px] sm:w-[140px] md:w-[180px] h-[100px] sm:h-[120px]"
           />
         </div>
 
-        <h3 className="text-xl font-semibold text-white mb-2">{title}</h3>
-        <p className="text-blue-100 text-sm">{description}</p>
+        <div className="px-5 sm:px-4 mb-10">
+          <h3 className="text-sm md:text-lg font-semibold text-white break-words">
+            {title}
+          </h3>
+          <p className="text-xs md:text-base text-blue-100 break-words">
+            {description}
+          </p>
+        </div>
       </div>
     </div>
   );
