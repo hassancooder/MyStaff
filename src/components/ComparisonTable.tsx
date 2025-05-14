@@ -1,3 +1,4 @@
+import { ArrowRight } from "lucide-react";
 import React from "react";
 
 const ComparisonTable: React.FC = () => {
@@ -118,8 +119,8 @@ const ComparisonTable: React.FC = () => {
   ];
 
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-10 bg-gray-50">
-      <div className="container mx-auto">
+    <section className=" py-16 px-4 sm:px-6 lg:px-10 bg-gray-50">
+      <div className=" container mx-auto">
         <h1
           className="text-2xl sm:text-3xl font-bold text-blue-800 mb-2"
           data-aos="fade-up"
@@ -210,6 +211,11 @@ const ComparisonTable: React.FC = () => {
               ))}
             </tbody>
           </table>
+        </div>
+        <div className="inline-block md:hidden w-full text-center mt-5">
+          <p className="text-xl font-extrabold text-blue-700 w-full ">
+            Scroll to right <ArrowRight className="inline-block" />
+          </p>
         </div>
       </div>
     </section>

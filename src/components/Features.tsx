@@ -70,7 +70,7 @@ const Features: React.FC = () => {
           {features.map((feature) => (
             <div
               key={feature.id}
-              className="flex flex-col lg:flex-row items-start gap-6 relative"
+              className="flex flex-col lg:flex-row items-center gap-6 relative"
             >
               <div
                 className="flex items-center w-full sm:w-auto"
@@ -81,7 +81,7 @@ const Features: React.FC = () => {
                   alt={`Step ${feature.id}`}
                   className="w-[40px] sm:w-[50px] h-[40px] sm:h-[50px] mr-[-16px] z-10"
                 />
-                <button className="font-semibold text-base sm:text-lg bg-blue-800 w-full sm:w-[200px] h-[80px] text-left pl-6 text-white rounded-xl z-5">
+                <button className="font-semibold text-base sm:text-lg bg-blue-800 w-full sm:w-[200px] h-[90px] text-left pl-6 text-white rounded-xl z-5">
                   {feature.title}
                 </button>
               </div>

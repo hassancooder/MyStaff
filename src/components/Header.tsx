@@ -33,6 +33,15 @@ const Header: React.FC = () => {
             >
               Contact
             </a>
+            <a
+              href="https://www.diligram.com/about-us.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 py-2"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              About
+            </a>
           </nav>
           <button
             className="md:hidden text-blue-600"
@@ -65,6 +74,15 @@ const Header: React.FC = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contact
+              </a>
+              <a
+                href="https://www.diligram.com/about-us.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 py-2"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                About
               </a>
             </div>
           </div>

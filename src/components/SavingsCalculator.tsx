@@ -48,10 +48,10 @@ const SavingsCalculator: React.FC = () => {
         <div className="flex flex-col md:flex-row">
           <div className="w-full md:w-1/2 mb-10 md:mb-0 md:pl-10">
             <h2
-              className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6"
+              className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6"
               data-aos="fade-down"
             >
-              Estimate Savings with MyStaff App
+              Estimate Savings with MyStaff app
             </h2>
 
             <div className="text-start mb-2">

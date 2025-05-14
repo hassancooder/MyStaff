@@ -10,7 +10,7 @@ const ModuleCard: React.FC<ModuleCardProps> = ({
   title,
   description,
   productId,
-}) => {
+}: ModuleCardProps) => {
   return (
     <div
       className="group relative overflow-hidden transform transition-transform duration-300 hover:-translate-y-2"
@@ -28,7 +28,7 @@ const ModuleCard: React.FC<ModuleCardProps> = ({
           />
         </div>
 
-        <div className=" px-5 xs:w-[47vw] sm:w-full sm:px-4 mb-10">
+        <div className=" px-5 xs:w-[47vw] sm:w-full sm:px-6 md:h-[20vh] mb-10">
           <h3 className="text-sm md:text-lg font-semibold text-white break-words">
             {title}
           </h3>
