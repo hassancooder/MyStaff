@@ -13,10 +13,13 @@ const DocumentApproach: React.FC = () => {
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-2xl font-bold text-blue-800 mb-6">
+        <h2
+          className="text-2xl font-bold text-blue-800 mb-6"
+          data-aos="fade-down"
+        >
           Our Compliance-First Document Approach
         </h2>
-        <ul className="space-y-4  max-w-3xl">
+        <ul className="space-y-4  max-w-3xl" data-aos="fade-right">
           {approaches.map((approach, index) => (
             <li key={index} className="flex items-start text-blue-600">
               <Dot />

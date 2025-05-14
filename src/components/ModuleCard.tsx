@@ -12,7 +12,10 @@ const ModuleCard: React.FC<ModuleCardProps> = ({
   productId,
 }) => {
   return (
-    <div className="group relative overflow-hidden transform transition-transform duration-300 hover:-translate-y-2">
+    <div
+      className="group relative overflow-hidden transform transition-transform duration-300 hover:-translate-y-2"
+      data-aos="zoom-out"
+    >
       <div
         className="bg-center bg-contain bg-no-repeat p-4 h-full flex flex-col items-center lg:items-start text-center lg:text-left"
         style={{ backgroundImage: "url('./cardBottom.png')" }}
@@ -25,7 +28,7 @@ const ModuleCard: React.FC<ModuleCardProps> = ({
           />
         </div>
 
-        <div className="px-5 sm:px-4 mb-10">
+        <div className=" px-5 xs:w-[47vw] sm:w-full sm:px-4 mb-10">
           <h3 className="text-sm md:text-lg font-semibold text-white break-words">
             {title}
           </h3>

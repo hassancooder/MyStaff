@@ -120,10 +120,16 @@ const ComparisonTable: React.FC = () => {
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-10 bg-gray-50">
       <div className="container mx-auto">
-        <h1 className="text-2xl sm:text-3xl font-bold text-blue-800 mb-2">
+        <h1
+          className="text-2xl sm:text-3xl font-bold text-blue-800 mb-2"
+          data-aos="fade-up"
+        >
           Document Management & Compliance
         </h1>
-        <h2 className="text-2xl sm:text-3xl font-bold text-blue-600 mb-6">
+        <h2
+          data-aos="fade-up"
+          className="text-2xl sm:text-3xl font-bold text-blue-600 mb-6"
+        >
           - comparison
         </h2>
 
@@ -135,7 +141,10 @@ const ComparisonTable: React.FC = () => {
           />
         </div>
 
-        <p className="text-blue-800 mb-8 max-w-3xl text-base sm:text-lg">
+        <p
+          className="text-blue-800 mb-8 max-w-3xl text-base sm:text-lg"
+          data-aos="fade-right"
+        >
           MyStaff app stands out with dedicated features for document lifecycle
           control, regulatory compliance, and ease of access in both field and
           office environments critical to highly regulated industries.

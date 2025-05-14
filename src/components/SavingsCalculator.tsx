@@ -47,7 +47,10 @@ const SavingsCalculator: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex flex-col md:flex-row">
           <div className="w-full md:w-1/2 mb-10 md:mb-0 md:pl-10">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">
+            <h2
+              className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6"
+              data-aos="fade-down"
+            >
               Estimate Savings with MyStaff App
             </h2>
 
@@ -59,18 +62,24 @@ const SavingsCalculator: React.FC = () => {
               />
             </div>
 
-            <p className="mb-4 sm:mb-6 text-sm sm:text-base">
+            <p
+              className="mb-4 sm:mb-6 text-sm sm:text-base"
+              data-aos="fade-right"
+            >
               Use the slider to input your organisation's
               <br className="hidden sm:block" />
               operational spend and see estimated savings.
             </p>
 
             <div className="mb-6 sm:mb-8">
-              <p className="mb-2 text-sm sm:text-base">
+              <p className="mb-2 text-sm sm:text-base" data-aos="fade-right">
                 Operational Spend (£0 - £400M)
               </p>
               <div className="flex items-center">
-                <p className="text-lg sm:text-2xl font-bold">
+                <p
+                  className="text-lg sm:text-2xl font-bold"
+                  data-aos="fade-right"
+                >
                   {formatCurrency(operationalSpend)}
                 </p>
               </div>
@@ -86,7 +95,10 @@ const SavingsCalculator: React.FC = () => {
               />
             </div>
 
-            <div className="bg-white text-blue-900 rounded-lg p-4 sm:p-6 shadow-lg transition-transform hover:scale-[1.01] max-w-full sm:max-w-xl text-sm sm:text-base">
+            <div
+              data-aos="zoom-in"
+              className="bg-white text-blue-900 rounded-lg p-4 sm:p-6 shadow-lg transition-transform hover:scale-[1.01] max-w-full sm:max-w-xl text-sm sm:text-base"
+            >
               <p className="font-bold text-base sm:text-lg mb-4">
                 Total Estimated Annual Savings:{" "}
                 {formatRange(

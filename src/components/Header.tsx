@@ -8,10 +8,13 @@ const Header: React.FC = () => {
     <header className="h-auto fixed top-0 w-full z-50 transition-all duration-300 bg-white shadow-md py-4">
       <div className="container mx-auto px-8 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
-          <div className="flex items-center">
+          <div className="flex items-center" data-aos="fade-right">
             <img src="./logo.png" alt="Logo" className="w-24 h-auto" />
           </div>
-          <nav className="hidden md:flex items-center space-x-6">
+          <nav
+            className="hidden md:flex items-center space-x-6"
+            data-aos="zoom-in"
+          >
             <a
               href="#features"
               className="text-sm text-blue-600 hover:underline"

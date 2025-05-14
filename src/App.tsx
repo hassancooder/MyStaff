@@ -8,10 +8,15 @@ import ProductModules from "./components/ProductModules";
 import Awards from "./components/Awards";
 import Impact from "./components/Impact";
 import Footer from "./components/Footer";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 function App() {
+  useEffect((): void => {
+    AOS.init();
+  }, []);
   return (
-    <div className="min-h-screen bg-white font-myfont">
+    <div className="min-h-screen bg-white font-myfont overflow-hidden">
       <div className="h-[13vh]"></div>
       <Header />
       <main>

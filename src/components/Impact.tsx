@@ -25,7 +25,10 @@ const Impact: React.FC = () => {
       <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center">
         <div className="w-full lg:w-1/2 flex flex-col">
           <div className="flex flex-col mb-8">
-            <h2 className="text-2xl sm:text-3xl font-bold text-blue-900 mb-2 leading-snug">
+            <h2
+              className="text-2xl sm:text-3xl font-bold text-blue-900 mb-2 leading-snug"
+              data-aos="fade-down"
+            >
               Real Impact, <br /> Proven Outcomes
             </h2>
             <div className="text-start mb-6">
@@ -37,7 +40,11 @@ const Impact: React.FC = () => {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-0 sm:mb-20">
               {impacts.map((impact) => (
-                <div key={impact.id} className="flex items-center gap-3">
+                <div
+                  key={impact.id}
+                  className="flex items-center gap-3"
+                  data-aos="fade-right"
+                >
                   <img
                     src={`./impact${impact.id}.png`}
                     alt={`Impact ${impact.id}`}
@@ -51,7 +58,10 @@ const Impact: React.FC = () => {
             </div>
           </div>
 
-          <div className="bg-blue-600 text-white px-6 sm:px-10 py-4  sm:rounded-lg">
+          <div
+            className="bg-blue-600 text-white px-6 sm:px-10 py-4  sm:rounded-lg"
+            data-aos="fade-up"
+          >
             <h3 className="text-xl sm:text-2xl font-bold text-yellow-400 mb-3">
               Let’s Talk
             </h3>
@@ -71,7 +81,7 @@ const Impact: React.FC = () => {
           </div>
         </div>
 
-        <div className="w-full lg:w-1/2 mb-10 lg:mb-0">
+        <div className="w-full lg:w-1/2 mb-10 lg:mb-0" data-aos="fade-left">
           <img
             src="./impacts.png"
             alt="Impact Visual"

@@ -47,9 +47,12 @@ const Features: React.FC = () => {
   ];
 
   return (
-    <section id="features" className="py-20 bg-white">
+    <section id="features" className="py-20 bg-white overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-10">
-        <h2 className="text-2xl sm:text-3xl font-bold text-blue-800 mb-6 leading-snug">
+        <h2
+          className="text-2xl sm:text-3xl font-bold text-blue-800 mb-6 leading-snug"
+          data-aos="fade-up"
+        >
           A tool for controlling knowledge, engagement,
           <br className="hidden sm:block" />
           and compliance <span className="text-red-600">– in one platform</span>
@@ -69,7 +72,10 @@ const Features: React.FC = () => {
               key={feature.id}
               className="flex flex-col lg:flex-row items-start gap-6 relative"
             >
-              <div className="flex items-center w-full sm:w-auto">
+              <div
+                className="flex items-center w-full sm:w-auto"
+                data-aos="fade-right"
+              >
                 <img
                   src={`./num${feature.id}.png`}
                   alt={`Step ${feature.id}`}
@@ -87,7 +93,10 @@ const Features: React.FC = () => {
                 }}
               ></div>
 
-              <div className="w-full lg:flex-1 rounded-lg p-[2px] bg-gradient-to-r from-blue-500 via-green-400 to-yellow-400">
+              <div
+                className="w-full lg:flex-1 rounded-lg p-[2px] bg-gradient-to-r from-blue-500 via-green-400 to-yellow-400"
+                data-aos="fade-left"
+              >
                 <div className="relative bg-white rounded-md z-10 flex flex-col p-4 items-center justify-center h-full">
                   <p className="text-base sm:text-lg leading-relaxed text-blue-600 text-center lg:text-left">
                     {feature.description}
