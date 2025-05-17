@@ -66,53 +66,32 @@ const Features: React.FC = () => {
           />
         </div>
 
-        <div className="space-y-12">
-          {features.map((feature) => (
-            <div
-              key={feature.id}
-              className="flex flex-col lg:flex-row items-center gap-6 relative"
-            >
+        <div className=" md:h-[100vh] grid grid-cols-1 md:grid-cols-2  md:gap-20 lg:gap-2 px-4">
+          {features.map((feature) => {
+            return (
               <div
-                className="flex items-center w-full sm:w-auto"
-                data-aos="fade-right"
+                key={feature.id}
+                className="relative flex flex-col w-full h-full gap-3 p-2"
               >
-                <img
-                  src={`./num${feature.id}.png`}
-                  alt={`Step ${feature.id}`}
-                  className="w-[40px] sm:w-[50px] h-[40px] sm:h-[50px] mr-[-16px] z-10"
-                />
-                <button className="font-semibold text-base sm:text-lg bg-blue-800 w-full sm:w-[200px] h-[90px] text-left pl-6 text-white rounded-xl z-5">
-                  {feature.title}
-                </button>
-              </div>
-
-              <div
-                className="w-full sm:w-[220px] h-[100px] bg-cover bg-center rounded-2xl"
-                style={{
-                  backgroundImage: `url('./tool${feature.id}.png')`,
-                }}
-              ></div>
-
-              <div
-                className="w-full lg:flex-1 rounded-lg p-[2px] bg-gradient-to-r from-blue-500 via-green-400 to-yellow-400"
-                data-aos="fade-left"
-              >
-                <div className="relative bg-white rounded-md z-10 flex flex-col p-4 items-center justify-center h-full">
-                  <p className="text-base sm:text-lg leading-relaxed text-blue-600 text-center lg:text-left">
-                    {feature.description}
-                  </p>
-
-                  {feature.id !== 4 && (
-                    <img
-                      src="./arrow.png"
-                      alt="Arrow"
-                      className="absolute right-6 bottom-[-30px] w-[40px] sm:w-[60px]"
-                    />
-                  )}
+                <div
+                  className="w-[80vw] h-[25vh] md:w-[40vw] md:h-[190px] xl:h-[30vh] 2xl:h-[40vh] 3xl:rounded-4xl bg-cover bg-center rounded-3xl flex items-end px-5 p-5"
+                  style={{ backgroundImage: `url('tool${feature.id}.png')` }}
+                >
+                  <h3 className="text-white text-2xl lg:text-3xl xl:text-4xl">
+                    {feature.title}
+                  </h3>
+                  <img
+                    src={`./num${feature.id}.png`}
+                    alt="Number"
+                    className="absolute top-0 left-0 w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 xl:w-22 xl:h-22"
+                  />
                 </div>
+                <p className="pl-3 text-sm text-blue-800 md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
+                  {feature.description}
+                </p>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

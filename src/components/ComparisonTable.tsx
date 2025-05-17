@@ -1,6 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import React from "react";
-
+import { LucideCheckCircle } from "lucide-react";
+import { XCircle } from "lucide-react";
 const ComparisonTable: React.FC = () => {
   const features = [
     {
@@ -199,11 +200,17 @@ const ComparisonTable: React.FC = () => {
                         key={idx}
                         className="p-3  border-blue-600 border-[2px] text-center"
                       >
-                        <img
-                          src={value ? "./tick.png" : "./cross.png"}
-                          alt={value ? "tick" : "cross"}
-                          className="h-8 w-8 sm:h-[50px] sm:w-[50px] mx-auto"
-                        />
+                        <div className="flex items-center justify-center">
+                          {value ? (
+                            <>
+                              <LucideCheckCircle className="text-green-600" />
+                            </>
+                          ) : (
+                            <>
+                              <XCircle className="text-red-600" />
+                            </>
+                          )}
+                        </div>
                       </td>
                     )
                   )}
@@ -223,3 +230,7 @@ const ComparisonTable: React.FC = () => {
 };
 
 export default ComparisonTable;
+
+{
+  /* <CircleCheckBig color="#00ff00" />; */
+}

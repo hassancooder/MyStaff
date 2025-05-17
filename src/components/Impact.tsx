@@ -21,10 +21,10 @@ const Impact: React.FC = () => {
   ];
 
   return (
-    <section className="bg-white overflow-hidden mt-10  md:px-10">
-      <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center">
-        <div className="w-full lg:w-1/2 flex flex-col">
-          <div className="flex flex-col mb-8">
+    <section className="bg-white overflow-hidden mt-10">
+      <div className="w-[100vw]  flex flex-col-reverse md:flex-row items-center justify-between">
+        <div className="w-[70vw] flex flex-col">
+          <div className="flex flex-col px-10 mb-12">
             <h2
               className="text-2xl sm:text-3xl font-bold text-blue-900 mb-2 leading-snug"
               data-aos="fade-down"
@@ -38,7 +38,7 @@ const Impact: React.FC = () => {
                 className="w-[120px] h-auto ml-[-20px]"
               />
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-0 sm:mb-20">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-0 sm:mb-0">
               {impacts.map((impact) => (
                 <div
                   key={impact.id}
@@ -59,7 +59,7 @@ const Impact: React.FC = () => {
           </div>
 
           <div
-            className="bg-blue-600 text-white px-6 sm:px-10 py-4  sm:rounded-lg"
+            className="bg-blue-600 text-white px-6 sm:px-10 py-4"
             data-aos="fade-up"
           >
             <h3 className="text-xl sm:text-2xl font-bold text-yellow-400 mb-3">
@@ -81,11 +81,11 @@ const Impact: React.FC = () => {
           </div>
         </div>
 
-        <div className="w-full lg:w-1/2 mb-10 lg:mb-0" data-aos="fade-left">
+        <div data-aos="fade-left">
           <img
             src="./impacts.png"
             alt="Impact Visual"
-            className="w-full h-auto object-contain"
+            className="w-[60vw] h-full object-contain"
           />
         </div>
       </div>

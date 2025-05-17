@@ -86,7 +86,7 @@ const SavingsCalculator: React.FC = () => {
               <input
                 type="range"
                 aria-label="Operational Spend Slider"
-                min="10000000"
+                min="0"
                 max="400000000"
                 step="5000000"
                 value={operationalSpend}
