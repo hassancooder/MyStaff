@@ -72,13 +72,13 @@ const Features: React.FC = () => {
               <div key={feature.id} className=" flex flex-col w-full p-2 mx-3 ">
                 <div className=" relative w-full flex items-end ">
                   <img src={`./tool${feature.id}.png`} className="w-full" />
-                  <h3 className="absolute text-white bottom-7 left-8 text-2xl lg:text-3xl">
+                  <h3 className="absolute text-white bottom-7 left-8 text-2xl lg:text-3xl 3xl:bottom-12 3xl:left-20 3xl:text-4xl">
                     {feature.title}
                   </h3>
                   <img
                     src={`./num${feature.id}.png`}
                     alt="Number"
-                    className="absolute top-0 left-0 w-12 h-12 "
+                    className="absolute top-0 left-0  w-12 h-12 3xl:w-20 3xl:h-20"
                   />
                 </div>
                 <p className="pl-3 text-sm text-blue-800 md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
