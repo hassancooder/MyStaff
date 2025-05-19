@@ -22,23 +22,23 @@ const Impact: React.FC = () => {
 
   return (
     <section className="bg-white overflow-hidden mt-10">
-      <div className="w-[100vw]  flex flex-col-reverse md:flex-row items-center justify-between">
-        <div className="w-[70vw] flex flex-col">
-          <div className="flex flex-col px-10 mb-12">
+      <div className="w-full flex flex-col-reverse lg:flex-row items-stretch justify-between min-h-[80vh]">
+        <div className="w-full lg:w-[70vw] flex flex-col justify-between">
+          <div className="flex flex-col xl:py-20 xl:px-10">
             <h2
-              className="text-2xl sm:text-3xl font-bold text-blue-900 mb-2 leading-snug"
+              className="text-2xl sm:text-3xl font-bold text-blue-900 mb-2 leading-snug mt-4 ml-10"
               data-aos="fade-down"
             >
               Real Impact, <br /> Proven Outcomes
             </h2>
-            <div className="text-start mb-6">
+            <div className="text-start  mb-6">
               <img
                 src="./line.png"
                 alt="Line"
-                className="w-[120px] h-auto ml-[-20px]"
+                className="w-[120px] h-auto ml-5"
               />
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-0 sm:mb-0">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-20 mt-10 px-10">
               {impacts.map((impact) => (
                 <div
                   key={impact.id}
@@ -50,7 +50,7 @@ const Impact: React.FC = () => {
                     alt={`Impact ${impact.id}`}
                     className="w-[80px] h-[80px] object-contain"
                   />
-                  <p className="text-blue-600 text-start text-base font-medium leading-tight">
+                  <p className="text-blue-600 text-start text-md  font-bold leading-tight">
                     {impact.description}
                   </p>
                 </div>
@@ -59,7 +59,7 @@ const Impact: React.FC = () => {
           </div>
 
           <div
-            className="bg-blue-600 text-white px-6 sm:px-10 py-4"
+            className="bg-blue-600 text-white px-6 sm:px-10 py-4 mt-10"
             data-aos="fade-up"
           >
             <h3 className="text-xl sm:text-2xl font-bold text-yellow-400 mb-3">
@@ -81,11 +81,14 @@ const Impact: React.FC = () => {
           </div>
         </div>
 
-        <div data-aos="fade-left">
+        <div
+          className="w-full lg:w-[60vw] flex justify-center items-end mt-10 lg:mt-0"
+          data-aos="fade-left"
+        >
           <img
             src="./impacts.png"
             alt="Impact Visual"
-            className="w-[60vw] h-full object-contain"
+            className="w-full max-w-[500px] lg:max-w-[60vw] h-auto object-contain"
           />
         </div>
       </div>

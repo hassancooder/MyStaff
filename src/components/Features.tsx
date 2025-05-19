@@ -48,7 +48,7 @@ const Features: React.FC = () => {
 
   return (
     <section id="features" className="py-20 bg-white overflow-hidden">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-10">
+      <div className="container mx-auto  sm:px-6 lg:px-10">
         <h2
           className="text-2xl sm:text-3xl font-bold text-blue-800 mb-6 leading-snug"
           data-aos="fade-up"
@@ -66,24 +66,19 @@ const Features: React.FC = () => {
           />
         </div>
 
-        <div className=" md:h-[100vh] grid grid-cols-1 md:grid-cols-2  md:gap-20 lg:gap-2 px-4">
+        <div className=" md:max-h-[150vh] grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20">
           {features.map((feature) => {
             return (
-              <div
-                key={feature.id}
-                className="relative flex flex-col w-full h-full gap-3 p-2"
-              >
-                <div
-                  className="w-[80vw] h-[25vh] md:w-[40vw] md:h-[190px] xl:h-[30vh] 2xl:h-[40vh] 3xl:rounded-4xl bg-cover bg-center rounded-3xl flex items-end px-5 p-5"
-                  style={{ backgroundImage: `url('tool${feature.id}.png')` }}
-                >
-                  <h3 className="text-white text-2xl lg:text-3xl xl:text-4xl">
+              <div key={feature.id} className=" flex flex-col w-full p-2 mx-3 ">
+                <div className=" relative w-full flex items-end ">
+                  <img src={`./tool${feature.id}.png`} className="w-full" />
+                  <h3 className="absolute text-white bottom-7 left-8 text-2xl lg:text-3xl">
                     {feature.title}
                   </h3>
                   <img
                     src={`./num${feature.id}.png`}
                     alt="Number"
-                    className="absolute top-0 left-0 w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 xl:w-22 xl:h-22"
+                    className="absolute top-0 left-0 w-12 h-12 "
                   />
                 </div>
                 <p className="pl-3 text-sm text-blue-800 md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">

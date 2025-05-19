@@ -7,7 +7,7 @@ const ComparisonTable: React.FC = () => {
     {
       name: (
         <>
-          <b>. Document creation</b>, <br />
+          <b>Document creation</b>, <br />
           approval & author reminders
         </>
       ),
@@ -22,7 +22,7 @@ const ComparisonTable: React.FC = () => {
     {
       name: (
         <>
-          <b>. Automated version control</b>, <br />& document history
+          <b>Automated version control</b>, <br />& document history
         </>
       ),
       competitors: {
@@ -36,7 +36,7 @@ const ComparisonTable: React.FC = () => {
     {
       name: (
         <>
-          <b>. Auto-categorization</b>, <br /> & tagging (AI based)
+          <b>Auto-categorization</b>, <br /> & tagging (AI based)
         </>
       ),
       competitors: {
@@ -50,7 +50,7 @@ const ComparisonTable: React.FC = () => {
     {
       name: (
         <>
-          <b>. Searchable PDF</b>, <br /> rendering with mobile optimization
+          <b>Searchable PDF</b>, <br /> rendering with mobile optimization
         </>
       ),
       competitors: {
@@ -64,7 +64,7 @@ const ComparisonTable: React.FC = () => {
     {
       name: (
         <>
-          <b>. Staff alerts</b>, <br /> for new/updated documents
+          <b>Staff alerts</b>, <br /> for new/updated documents
         </>
       ),
       competitors: {
@@ -78,7 +78,7 @@ const ComparisonTable: React.FC = () => {
     {
       name: (
         <>
-          <b>. Mobile-friendly</b>, <br /> policy guidelines with tests
+          <b>Mobile-friendly</b>, <br /> policy guidelines with tests
         </>
       ),
       competitors: {
@@ -92,7 +92,7 @@ const ComparisonTable: React.FC = () => {
     {
       name: (
         <>
-          <b>. Audit-ready access logs</b>, <br /> & compliance tracking
+          <b>Audit-ready access logs</b>, <br /> & compliance tracking
         </>
       ),
       competitors: {
@@ -106,7 +106,7 @@ const ComparisonTable: React.FC = () => {
     {
       name: (
         <>
-          <b>. Offline access </b>, <br /> to critical compliance documents
+          <b>Offline access </b>, <br /> to critical compliance documents
         </>
       ),
       competitors: {
@@ -203,7 +203,7 @@ const ComparisonTable: React.FC = () => {
                         <div className="flex items-center justify-center">
                           {value ? (
                             <>
-                              <LucideCheckCircle className="text-green-600" />
+                              <LucideCheckCircle className="text-[#2dc043]" />
                             </>
                           ) : (
                             <>
