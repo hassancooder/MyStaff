@@ -5,46 +5,41 @@ const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="h-auto fixed top-0 w-full z-50 transition-all duration-300 bg-white shadow-md py-4">
-      <div className="container mx-auto px-8 sm:px-6 lg:px-8">
+    <header className="absolute h-auto w-full top-0 py-3">
+      <div className="container mx-auto px-0 sm:px-6 lg:px-16">
         <div className="flex justify-between items-center">
           <div className="flex items-center" data-aos="fade-right">
-            <img src="./logo.png" alt="Logo" className="w-24 h-auto" />
+            <img
+              src="./white-logo.png"
+              alt="Logo"
+              className="w-32 md:w-40 h-auto"
+            />
           </div>
           <nav
             className="hidden md:flex items-center space-x-6"
             data-aos="zoom-in"
           >
-            <a
-              href="#features"
-              className="text-sm text-blue-600 hover:underline"
-            >
+            <a href="#features" className="text-sm text-white hover:underline">
               Features
             </a>
-            <a
-              href="#modules"
-              className="text-sm text-blue-600 hover:underline"
-            >
+            <a href="#modules" className="text-sm text-white hover:underline">
               Modules
             </a>
-            <a
-              href="#contact"
-              className="text-sm text-blue-600 hover:underline"
-            >
+            <a href="#contact" className="text-sm text-white hover:underline">
               Contact
             </a>
-            <a
+            {/* <a
               href="https://www.diligram.com/about-us.html"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-600 py-2"
+              className="text-white py-2"
               onClick={() => setIsMenuOpen(false)}
             >
               About
-            </a>
+            </a> */}
           </nav>
           <button
-            className="md:hidden text-blue-600"
+            className="md:hidden text-white"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -75,7 +70,7 @@ const Header: React.FC = () => {
               >
                 Contact
               </a>
-              <a
+              {/* <a
                 href="https://www.diligram.com/about-us.html"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -83,7 +78,7 @@ const Header: React.FC = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
-              </a>
+              </a> */}
             </div>
           </div>
         )}
