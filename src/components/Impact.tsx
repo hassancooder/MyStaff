@@ -62,20 +62,20 @@ const Impact: React.FC = () => {
             className="bg-blue-600 text-white px-6 sm:px-10 py-4 mt-10"
             data-aos="fade-up"
           >
-            <h3 className="text-xl sm:text-2xl font-bold text-yellow-400 mb-3">
+            <h3 className="text-xl sm:text-2xl font-bold text-yellow-400  ml-8">
               Let’s Talk
             </h3>
-            <div className="text-start mb-3">
+            <div className="text-start ml-8">
               <img
                 src="./line.png"
                 alt="Line"
                 className="w-[120px] h-auto ml-[-20px]"
               />
             </div>
-            <p className="mb-4 text-sm sm:text-base">
+            <p className="mb-4 text-sm sm:text-base ml-8">
               See how MyStaff app can transform governance at your organisation.
             </p>
-            <button className="bg-yellow-400 text-black font-semibold px-5 py-2 rounded-md hover:bg-yellow-500 transition">
+            <button className="bg-yellow-400 text-black font-semibold px-5 py-2 rounded-md hover:bg-yellow-500 transition ml-8">
               Request a Demo
             </button>
           </div>

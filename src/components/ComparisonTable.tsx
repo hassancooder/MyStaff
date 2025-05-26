@@ -125,16 +125,16 @@ const ComparisonTable: React.FC = () => {
 
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-0 bg-gray-50">
-      <div className="container mx-auto">
+      <div className="container mx-auto sm:px-6 lg:px-10">
         <h1
-          className="text-2xl sm:text-3xl font-bold text-blue-800 mb-2"
+          className="text-2xl sm:text-3xl font-bold text-blue-800"
           data-aos="fade-up"
         >
           Document Management & Compliance
         </h1>
         <h2
           data-aos="fade-up"
-          className="text-2xl sm:text-3xl font-bold text-blue-600 mb-6"
+          className="text-2xl sm:text-3xl font-bold text-blue-600"
         >
           - comparison
         </h2>
@@ -147,9 +147,9 @@ const ComparisonTable: React.FC = () => {
           />
         </div>
 
-        <div className="overflow-x-auto flex flex-col gap-20 lg:gap-0 lg:flex-row">
+        <div className="overflow-x-auto flex flex-col gap-12 lg:gap-4 lg:flex-row">
           <p
-            className="text-blue-600 mt-10  max-w-2xl font-bold text-base lg:text-xs xl:text-base"
+            className="text-blue-600 max-w-2xl font-bold text-base lg:text-xs xl:text-base"
             data-aos="fade-right"
           >
             MyStaff app stands out with dedicated features for document
