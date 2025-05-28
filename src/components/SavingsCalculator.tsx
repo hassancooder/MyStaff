@@ -46,8 +46,8 @@ const SavingsCalculator: React.FC = () => {
       style={{ backgroundImage: "url('./Savings.png')" }}
       className="py-12 md:py-16 bg-center min-h-[110vh] bg-cover text-white relative overflow-hidden"
     >
-      <div className="container mx-auto sm:px-6 lg:px-10">
-      <div className="max-w-7xl px-4 sm:px-6 lg:px-8 relative flex md:flex-row h-[100vh] w-full items-center justify-start">
+      <div className="container mx-auto sm:px-6 lg:px-0">
+      <div className="max-w-7xl relative flex md:flex-row h-[100vh] w-full items-center justify-start">
         <div className="w-full lg:w-1/2 md:pl-10">
           <h2
             className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6"

@@ -24,19 +24,15 @@ const Impact: React.FC = () => {
     <section className="bg-white overflow-hidden mt-10">
       <div className="w-full flex flex-col-reverse lg:flex-row items-stretch justify-between min-h-[80vh]">
         <div className="w-full lg:w-[70vw] flex flex-col justify-between">
-          <div className="flex flex-col xl:py-20 xl:px-10">
+          <div className="flex flex-col xl:py-20 xl:px-20 lg:ml-2 xl:ml-0 container mx-auto sm:px-6 lg:px-10 2xl:px-16 3xl:ml-7">
             <h2
-              className="text-2xl sm:text-3xl font-bold text-blue-900 mb-2 leading-snug mt-4 ml-10"
+              className="text-2xl sm:text-3xl font-bold text-blue-900 mb-2 leading-snug mt-4"
               data-aos="fade-down"
             >
               Real Impact, <br /> Proven Outcomes
             </h2>
-            <div className="text-start  mb-6">
-              <img
-                src="./line.png"
-                alt="Line"
-                className="w-[120px] h-auto ml-5"
-              />
+            <div className="text-start mb-6 -ml-4">
+              <img src="./line.png" alt="Line" className="w-[120px] h-auto" />
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-20 mt-10 px-10">
               {impacts.map((impact) => (
@@ -57,27 +53,25 @@ const Impact: React.FC = () => {
               ))}
             </div>
           </div>
-
           <div
             className="bg-blue-600 text-white px-6 sm:px-10 py-4 mt-10"
             data-aos="fade-up"
           >
-            <h3 className="text-xl sm:text-2xl font-bold text-yellow-400  ml-8">
-              Let’s Talk
-            </h3>
-            <div className="text-start ml-8">
-              <img
-                src="./line.png"
-                alt="Line"
-                className="w-[120px] h-auto ml-[-20px]"
-              />
+            <div className="container sm:px-8 sm:-ml-24 md:px-12 md:ml-1 lg:px-2 xl:px-9 2xl:px-12">
+              <h3 className="text-xl sx:-ml-16 sm:ml-0 sm:text-2xl font-bold text-yellow-400">
+                Let’s Talk
+              </h3>
+              <div className="text-start xs:-ml-20 sm:-ml-3">
+                <img src="./line.png" alt="Line" className="w-[120px] h-auto" />
+              </div>
+              <p className="mb-4 text-sm sm:text-base xs:-ml-16 sm:ml-0">
+                See how MyStaff app can transform governance at your
+                organisation.
+              </p>
+              <button className="bg-yellow-400 text-black font-semibold px-5 py-2 rounded-md hover:bg-yellow-500 transition xs:-ml-16 sm:ml-0">
+                Request a Demo
+              </button>
             </div>
-            <p className="mb-4 text-sm sm:text-base ml-8">
-              See how MyStaff app can transform governance at your organisation.
-            </p>
-            <button className="bg-yellow-400 text-black font-semibold px-5 py-2 rounded-md hover:bg-yellow-500 transition ml-8">
-              Request a Demo
-            </button>
           </div>
         </div>
 
