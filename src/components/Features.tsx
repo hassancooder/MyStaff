@@ -48,7 +48,7 @@ const Features: React.FC = () => {
 
   return (
     <section id="features" className="py-20 bg-white overflow-hidden">
-      <div className="container mx-auto  sm:px-6 lg:px-10">
+      <div className="container mx-auto sm:px-6 lg:px-10">
         <h2
           className="text-2xl sm:text-3xl font-bold text-blue-800 mb-6 leading-snug"
           data-aos="fade-up"
@@ -69,7 +69,7 @@ const Features: React.FC = () => {
         <div className=" md:max-h-[150vh] grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20">
           {features.map((feature) => {
             return (
-              <div key={feature.id} className=" flex flex-col w-full p-2 mx-3 ">
+              <div key={feature.id} className=" flex flex-col w-full py-2">
                 <div className=" relative w-full flex items-end ">
                   <img src={`./tool${feature.id}.png`} className="w-full" />
                   <h3 className="absolute text-white bottom-7 left-8 text-2xl lg:text-3xl 3xl:bottom-12 3xl:left-20 3xl:text-4xl">

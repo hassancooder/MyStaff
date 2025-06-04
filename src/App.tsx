@@ -11,16 +11,17 @@ import Footer from "./components/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import InfoSection from "./components/InfoSection";
 function App() {
   useEffect((): void => {
     AOS.init();
   }, []);
   return (
     <div className="min-h-screen bg-white font-myfont overflow-hidden">
-      <div className="h-[13vh]"></div>
       <Header />
       <main>
         <Hero />
+        <InfoSection />
         <Features />
         <ComparisonTable />
         <DocumentApproach />

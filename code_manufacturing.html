@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MyStaff App ROI Calculator</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; max-width: 800px; margin: auto; }
+    h2 { margin-top: 0; }
+    label { display: block; margin-top: 25px; font-weight: bold; }
+    input[type="range"] { width: 100%; }
+    .value-display { font-size: 1.1em; margin-bottom: 5px; }
+    .output { background: #f0f4f7; padding: 20px; margin-top: 30px; border-radius: 10px; }
+    .result { font-size: 1.2em; margin: 10px 0; }
+    .breakdown ul { padding-left: 20px; list-style: none; }
+    .breakdown li { margin-bottom: 8px; }
+  </style>
+</head>
+<body>
+
+<h2>Estimate Savings with MyStaff app</h2>
+<p>
+  Use the slider to input your organisation's operational spend. We'll estimate savings based on industry-aligned cost categories and conservative efficiency assumptions.
+</p>
+
+<label for="spend">Operational Spend (£0 – £400M)</label>
+<div class="value-display">£<span id="spendValue">200,000,000</span></div>
+<input type="range" id="spend" min="0" max="400000000" step="1000000" value="200000000" />
+
+<div class="output" id="results">
+  <div class="result" id="totalRange"></div>
+  <div class="breakdown">
+    <strong>Category Breakdown:</strong>
+    <ul id="categoryBreakdown"></ul>
+  </div>
+</div>
+
+<script>
+  const spendSlider = document.getElementById('spend');
+  const spendValue = document.getElementById('spendValue');
+  const totalRange = document.getElementById('totalRange');
+  const categoryBreakdown = document.getElementById('categoryBreakdown');
+
+  const categories = [
+    { name: "Agency / Temp Labour Costs", proportion: 0.12, lowRate: 0.05, highRate: 0.10 },
+    { name: "Maintenance & Operational Downtime", proportion: 0.30, lowRate: 0.02, highRate: 0.05 },
+    { name: "Training & Certification", proportion: 0.10, lowRate: 0.08, highRate: 0.10 },
+    { name: "Administrative Overheads", proportion: 0.08, lowRate: 0.05, highRate: 0.10 },
+    { name: "Compliance / Safety Risk Costs", proportion: 0.10, lowRate: 0.03, highRate: 0.05 },
+    { name: "Quality Control / Rework Costs", proportion: 0.20, lowRate: 0.02, highRate: 0.05 }
+  ];
+
+  function formatCurrency(value) {
+    return '£' + value.toLocaleString(undefined, { maximumFractionDigits: 0 });
+  }
+
+  function updateCalculator() {
+    const spend = parseFloat(spendSlider.value);
+    spendValue.textContent = spend.toLocaleString();
+
+    let totalLow = 0;
+    let totalHigh = 0;
+    let breakdownHTML = "";
+
+    categories.forEach(cat => {
+      const catSpend = spend * cat.proportion;
+      const low = catSpend * cat.lowRate;
+      const high = catSpend * cat.highRate;
+      totalLow += low;
+      totalHigh += high;
+
+      breakdownHTML += `<li><strong>${cat.name}:</strong> ${formatCurrency(low)} – ${formatCurrency(high)}</li>`;
+    });
+
+    categoryBreakdown.innerHTML = breakdownHTML;
+    totalRange.innerHTML = `<strong>Total Estimated Annual Savings:</strong> ${formatCurrency(totalLow)} – ${formatCurrency(totalHigh)}`;
+  }
+
+  spendSlider.addEventListener('input', updateCalculator);
+  updateCalculator();
+</script>
+
+</body>
+</html>

@@ -1,30 +1,32 @@
 import React, { useState } from "react";
 
 const SavingsCalculator: React.FC = () => {
-  const [operationalSpend, setOperationalSpend] = useState(205000000);
+  const [operationalSpend, setOperationalSpend] = useState(200000000);
+
+  const categories = [
+    { name: "Agency / Temp Labour Costs", proportion: 0.12, lowRate: 0.05, highRate: 0.10 },
+    { name: "Maintenance & Operational Downtime", proportion: 0.30, lowRate: 0.02, highRate: 0.05 },
+    { name: "Training & Certification", proportion: 0.10, lowRate: 0.08, highRate: 0.10 },
+    { name: "Administrative Overheads", proportion: 0.08, lowRate: 0.05, highRate: 0.10 },
+    { name: "Compliance / Safety Risk Costs", proportion: 0.10, lowRate: 0.03, highRate: 0.05 },
+    { name: "Quality Control / Rework Costs", proportion: 0.20, lowRate: 0.02, highRate: 0.05 },
+  ];
 
   const calculateSavings = (spend: number) => {
-    const tempStaffCosts = spend * 0.05;
-    const clinicalErrors = spend * 0.02;
-    const qualityIssues = spend * 0.015;
-    const adminOverheads = spend * 0.012;
-    const hseProcedures = spend * 0.008;
+    let totalLow = 0;
+    let totalHigh = 0;
+    const breakdown: { name: string; low: number; high: number }[] = [];
 
-    const totalSavings =
-      tempStaffCosts +
-      clinicalErrors +
-      qualityIssues +
-      adminOverheads +
-      hseProcedures;
+    categories.forEach((cat) => {
+      const catSpend = spend * cat.proportion;
+      const low = catSpend * cat.lowRate;
+      const high = catSpend * cat.highRate;
+      totalLow += low;
+      totalHigh += high;
+      breakdown.push({ name: cat.name, low, high });
+    });
 
-    return {
-      totalSavings,
-      tempStaffCosts,
-      clinicalErrors,
-      qualityIssues,
-      adminOverheads,
-      hseProcedures,
-    };
+    return { totalLow, totalHigh, breakdown };
   };
 
   const savings = calculateSavings(operationalSpend);
@@ -44,10 +46,11 @@ const SavingsCalculator: React.FC = () => {
       style={{ backgroundImage: "url('./Savings.png')" }}
       className="py-12 md:py-16 bg-center min-h-[110vh] bg-cover text-white relative overflow-hidden"
     >
-      <div className="max-w-7xl  px-4 sm:px-6 lg:px-8 relative  flex md:flex-row h-[100vh] w-full items-center justify-start">
+      <div className="container mx-auto sm:px-6 lg:px-0">
+      <div className="max-w-7xl relative flex md:flex-row h-[100vh] w-full items-center justify-start">
         <div className="w-full lg:w-1/2 md:pl-10">
           <h2
-            className="text-2xl sm:text-3xl  font-bold mb-4 sm:mb-6"
+            className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6"
             data-aos="fade-down"
           >
             Estimate Savings with MyStaff app
@@ -87,7 +90,7 @@ const SavingsCalculator: React.FC = () => {
               aria-label="Operational Spend Slider"
               min="0"
               max="400000000"
-              step="5000000"
+              step="1000000"
               value={operationalSpend}
               onChange={(e) => setOperationalSpend(Number(e.target.value))}
               className="w-full h-[3px] bg-white rounded-lg appearance-none cursor-pointer mt-3 accent-yellow-400"
@@ -100,62 +103,21 @@ const SavingsCalculator: React.FC = () => {
           >
             <p className="font-bold text-base sm:text-lg mb-4">
               Total Estimated Annual Savings:{" "}
-              {formatRange(
-                savings.totalSavings * 0.9,
-                savings.totalSavings * 1.1
-              )}
+              {formatRange(savings.totalLow, savings.totalHigh)}
             </p>
 
             <p className="font-semibold mb-2">Category Breakdown:</p>
             <ul className="space-y-1 text-xs sm:text-sm">
-              <li className="flex justify-between">
-                <span>Temporary Staff Costs:</span>
-                <span>
-                  {formatRange(
-                    savings.tempStaffCosts * 0.85,
-                    savings.tempStaffCosts * 1.05
-                  )}
-                </span>
-              </li>
-              <li className="flex justify-between">
-                <span>Clinical Errors:</span>
-                <span>
-                  {formatRange(
-                    savings.clinicalErrors * 0.9,
-                    savings.clinicalErrors * 1.1
-                  )}
-                </span>
-              </li>
-              <li className="flex justify-between">
-                <span>Quality Issues:</span>
-                <span>
-                  {formatRange(
-                    savings.qualityIssues * 0.9,
-                    savings.qualityIssues * 1.1
-                  )}
-                </span>
-              </li>
-              <li className="flex justify-between">
-                <span>Admin / Governance Overheads:</span>
-                <span>
-                  {formatRange(
-                    savings.adminOverheads * 0.95,
-                    savings.adminOverheads * 1.15
-                  )}
-                </span>
-              </li>
-              <li className="flex justify-between">
-                <span>H&S/HSE Compliance:</span>
-                <span>
-                  {formatRange(
-                    savings.hseProcedures * 0.9,
-                    savings.hseProcedures * 1.1
-                  )}
-                </span>
-              </li>
+              {savings.breakdown.map((item, index) => (
+                <li key={index} className="flex justify-between">
+                  <span>{item.name}:</span>
+                  <span>{formatRange(item.low, item.high)}</span>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
+      </div>
       </div>
     </section>
   );

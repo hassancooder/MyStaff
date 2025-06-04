@@ -1,231 +1,59 @@
-import { ArrowRight } from "lucide-react";
 import React from "react";
-import { LucideCheckCircle, XCircle } from "lucide-react";
+import { LucideCheckCircle } from "lucide-react";
+
+const featuresList = [
+  "Document creation, approval & author reminders",
+  "Automated version control & document history",
+  "Auto-categorization & tagging (AI based)",
+  "Searchable PDF rendering with mobile optimization",
+  "Staff alerts for new/updated documents",
+  "Mobile-friendly policy guidelines with tests",
+  "Audit-ready access logs & compliance tracking",
+  "Offline access to critical compliance documents",
+];
 
 const ComparisonTable: React.FC = () => {
-  const features = [
-    {
-      name: (
-        <>
-          <b>Document creation</b>, <br />
-          approval & author reminders
-        </>
-      ),
-      competitors: {
-        mystaff: true,
-        fatfinger: false,
-        intelex: false,
-        formopx: false,
-        frontline: false,
-      },
-    },
-    {
-      name: (
-        <>
-          <b>Automated version control</b>, <br />& document history
-        </>
-      ),
-      competitors: {
-        mystaff: true,
-        fatfinger: false,
-        intelex: true,
-        formopx: false,
-        frontline: false,
-      },
-    },
-    {
-      name: (
-        <>
-          <b>Auto-categorization</b>, <br />& tagging (AI based)
-        </>
-      ),
-      competitors: {
-        mystaff: true,
-        fatfinger: false,
-        intelex: false,
-        formopx: false,
-        frontline: false,
-      },
-    },
-    {
-      name: (
-        <>
-          <b>Searchable PDF</b>, <br />
-          rendering with mobile optimization
-        </>
-      ),
-      competitors: {
-        mystaff: true,
-        fatfinger: false,
-        intelex: false,
-        formopx: false,
-        frontline: false,
-      },
-    },
-    {
-      name: (
-        <>
-          <b>Staff alerts</b>, <br />
-          for new/updated documents
-        </>
-      ),
-      competitors: {
-        mystaff: true,
-        fatfinger: false,
-        intelex: false,
-        formopx: false,
-        frontline: false,
-      },
-    },
-    {
-      name: (
-        <>
-          <b>Mobile-friendly</b>, <br />
-          policy guidelines with tests
-        </>
-      ),
-      competitors: {
-        mystaff: true,
-        fatfinger: true,
-        intelex: false,
-        formopx: false,
-        frontline: false,
-      },
-    },
-    {
-      name: (
-        <>
-          <b>Audit-ready access logs</b>, <br />& compliance tracking
-        </>
-      ),
-      competitors: {
-        mystaff: true,
-        fatfinger: false,
-        intelex: true,
-        formopx: false,
-        frontline: false,
-      },
-    },
-    {
-      name: (
-        <>
-          <b>Offline access </b>, <br />
-          to critical compliance documents
-        </>
-      ),
-      competitors: {
-        mystaff: true,
-        fatfinger: false,
-        intelex: false,
-        formopx: false,
-        frontline: false,
-      },
-    },
-  ];
-
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-0 bg-gray-50">
+    <section className="py-16 px-4 sm:px-6 lg:px-10 bg-gray-50">
       <div className="container mx-auto">
-        <h1
-          className="text-2xl sm:text-3xl font-bold text-blue-800 mb-2"
-          data-aos="fade-up"
-        >
-          Document Management & Compliance
-        </h1>
-        <h2
-          data-aos="fade-up"
-          className="text-2xl sm:text-3xl font-bold text-blue-600 mb-6"
-        >
-          - comparison
-        </h2>
-
-        <div className="text-start mb-10">
-          <img
-            src="./line.png"
-            alt="Line"
-            className="w-[120px] sm:w-[150px] ml-[-10px] sm:ml-[-20px]"
-          />
-        </div>
-
-        <div className="overflow-x-auto flex flex-col gap-20 lg:gap-0 lg:flex-row">
+        <div className="max-w-3xl mx-auto text-center mb-10">
+          <h1
+            className="text-3xl sm:text-4xl font-bold text-blue-800 mb-4"
+            data-aos="fade-up"
+          >
+            Document Management & Compliance features of MyStaff app
+          </h1>
+          <div className="flex justify-center mb-4">
+            <img
+              src="./line.png"
+              alt="Line"
+              className="w-[150px] sm:w-[180px]"
+            />
+          </div>
           <p
-            className="text-blue-600 mt-10  max-w-2xl font-bold text-base lg:text-xs xl:text-base"
+            className="text-blue-600 font-semibold text-base sm:text-lg"
             data-aos="fade-right"
           >
-            MyStaff app stands out with dedicated features for document
-            lifecycle control, regulatory compliance, and ease of access in both
-            field and office environments critical to highly regulated
+            MyStaff app stands out with dedicated features from document
+            lifecycle control, regulatory compliance and ease of access in both
+            field and office environments, critical to highly regulated
             industries.
           </p>
-          <table className="min-w-[800px] w-full border-collapse border border-blue-600 text-sm sm:text-base">
-            <thead>
-              <tr>
-                <th className="w-[240px] text-blue-800 text-left text-sm p-3 bg-amber-400 border-blue-600 border-[2px]">
-                  Document Management
-                  <br /> & Compliance Feature
-                </th>
-                <th className="w-[160px] text-blue-800 text-center  bg-amber-400 border-blue-600 border-[2px]">
-                  <div className="flex justify-center">
-                    <img
-                      src="./logo.png"
-                      alt="Logo"
-                      className="h-[60px] w-[150px]"
-                    />
-                  </div>
-                </th>
-                <th className="w-[160px] text-blue-800 text-center text-md p-3 bg-amber-400 border-blue-600 border-[2px]">
-                  Fat Finger
-                </th>
-                <th className="w-[160px] text-blue-800 text-center text-md p-3 bg-amber-400 border-blue-600 border-[2px]">
-                  Intelex
-                </th>
-                <th className="w-[160px] text-blue-800 text-center text-md p-3 bg-amber-400 border-blue-600 border-[2px]">
-                  Form OpX
-                </th>
-                <th className="w-[160px] text-blue-800 text-center text-md p-3 bg-amber-400 border-blue-600 border-[2px]">
-                  Frontline Data
-                  <br />
-                  Solutions
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {features.map((feature, index) => (
-                <tr
-                  key={index}
-                  className={index % 2 === 0 ? "bg-white" : "bg-gray-50"}
-                >
-                  <td className="w-[240px] p-2 border-blue-600 border-[2px] text-blue-900">
-                    <div className="ml-2 text-blue-600 ">
-                      <p className="600 text-sm"> {feature.name}</p>
-                    </div>
-                  </td>
-                  {Object.entries(feature.competitors).map(
-                    ([key, value], idx) => (
-                      <td
-                        key={idx}
-                        className="w-[160px] p-1 border-blue-600 border-[2px] text-center"
-                      >
-                        <div className="flex items-center justify-center">
-                          {value ? (
-                            <LucideCheckCircle className="text-[#2dc043]" />
-                          ) : (
-                            <XCircle className="text-red-600" />
-                          )}
-                        </div>
-                      </td>
-                    )
-                  )}
-                </tr>
-              ))}
-            </tbody>
-          </table>
         </div>
 
-        <div className="inline-block md:hidden w-full text-center mt-5">
-          <p className="text-xl font-extrabold text-blue-700 w-full">
-            Scroll to right <ArrowRight className="inline-block" />
-          </p>
+        <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6">
+          {featuresList.map((feature, index) => (
+            <div
+              key={index}
+              className="flex items-start gap-3 bg-white border border-blue-200 rounded-2xl shadow-sm p-4"
+              data-aos="fade-up"
+            >
+              <LucideCheckCircle className="text-[#2dc043] min-w-[24px] mt-1" />
+              <p className="text-blue-800 text-sm sm:text-base font-medium">
+                {feature}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
