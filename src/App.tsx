@@ -1,7 +1,9 @@
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Features from "./components/Features";
-import ComparisonTable from "./components/ComparisonTable";
+// import ComparisonTable from "./components/ComparisonTable";
+import ComplianceFeatures from "./components/ComplianceFeatures";
+import UseCases from "./components/UseCases";
 import DocumentApproach from "./components/DocumentApproach";
 import SavingsCalculator from "./components/SavingsCalculator";
 import ProductModules from "./components/ProductModules";
@@ -23,7 +25,9 @@ function App() {
         <Hero />
         <InfoSection />
         <Features />
-        <ComparisonTable />
+        {/* <ComparisonTable /> */}
+        <ComplianceFeatures />
+        <UseCases />
         <DocumentApproach />
         <SavingsCalculator />
         <ProductModules />

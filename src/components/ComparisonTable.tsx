@@ -15,8 +15,11 @@ const ComparisonTable: React.FC = () => {
 
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-10 bg-gray-50">
-      <div className="container mx-auto max-w-5xl">
-        <h1 className="text-2xl sm:text-3xl font-bold text-blue-800 mb-4" data-aos="fade-up">
+      <div className="container mx-auto sm:px-6 lg:px-10">
+        <h1
+          className="text-2xl sm:text-3xl font-bold text-blue-800 mb-4"
+          data-aos="fade-up"
+        >
           Document Management & Compliance features of MyStaff app
         </h1>
 
@@ -28,10 +31,14 @@ const ComparisonTable: React.FC = () => {
           />
         </div>
 
-        <p className="text-blue-600 font-bold text-base lg:text-sm xl:text-base max-w-3xl mb-8" data-aos="fade-right">
-          *MyStaff app stands out with dedicated features from document lifecycle control,
-          regulatory compliance and ease of access in both field and office environments,
-          critical to highly regulated industries.*
+        <p
+          className="text-blue-600 font-bold text-base lg:text-sm xl:text-base max-w-3xl mb-8"
+          data-aos="fade-right"
+        >
+          *MyStaff app stands out with dedicated features from document
+          lifecycle control, regulatory compliance and ease of access in both
+          field and office environments, critical to highly regulated
+          industries.*
         </p>
 
         <div className="flex flex-col gap-4">
