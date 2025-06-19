@@ -77,7 +77,7 @@ const Header: React.FC = () => {
               >
                 Contact
               </a>
-              {/* <a
+              <a
                 href="https://www.diligram.com/about-us.html"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -85,7 +85,7 @@ const Header: React.FC = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
-              </a> */}
+              </a>
             </div>
           </div>
         )}
