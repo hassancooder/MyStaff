@@ -25,13 +25,13 @@ const Header: React.FC = () => {
             <a href="#modules" className="text-sm text-white hover:underline">
               Modules
             </a>
-            <a
+            {/* <a
               href="https://diligram.com/about-us.html"
               target="_blank"
               className="text-sm text-white hover:underline"
             >
               About
-            </a>
+            </a> */}
             <a href="#contact" className="text-sm text-white hover:underline">
               Contact
             </a>
