@@ -25,17 +25,10 @@ const Header: React.FC = () => {
             <a href="#modules" className="text-sm text-white hover:underline">
               Modules
             </a>
-            {/* <a
-              href="https://diligram.com/about-us.html"
-              target="_blank"
-              className="text-sm text-white hover:underline"
-            >
-              About
-            </a> */}
             <a href="#contact" className="text-sm text-white hover:underline">
               Contact
             </a>
-            {/* <a
+            <a
               href="https://www.diligram.com/about-us.html"
               target="_blank"
               rel="noopener noreferrer"
@@ -43,7 +36,7 @@ const Header: React.FC = () => {
               onClick={() => setIsMenuOpen(false)}
             >
               About
-            </a> */}
+            </a>
           </nav>
           <button
             className="md:hidden text-white"
