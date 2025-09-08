@@ -1,0 +1,71 @@
+import React, { useState, useEffect } from "react";
+
+const Hero: React.FC = () => {
+  const [isWideScreen, setIsWideScreen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsWideScreen(window.innerWidth > 700);
+    };
+
+    handleResize(); // check on first load
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return (
+    <section className="relative min-h-screen w-full overflow-hidden flex items-center">
+  {/* ===== VIDEO BACKGROUND ===== */}
+  <video
+    className="absolute top-0 left-0 w-full h-full object-cover z-10"
+    src={isWideScreen ? "./home-desktop-video.webm" : "./home-mobile-video.webm"}
+    autoPlay
+    muted
+    loop
+    playsInline
+  />
+
+  {/* ===== DARK OVERLAY ===== */}
+  <div className="absolute top-0 left-0 w-full h-full bg-black/40"></div>
+
+  {/* ===== HERO CONTENT ===== */}
+  <div className="relative container mx-auto px-4 sm:px-6 lg:px-20 py-16 z-20">
+    <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-10">
+      <div
+        className="flex-1 max-w-2xl text-center md:text-left"
+        data-aos="fade-right"
+      >
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-normal mb-2 leading-tight text-white">
+          A critical tool to support {isWideScreen ? <br /> : " "}
+          <span className="font-semibold">frontline governance</span>
+        </h2>
+
+        <p className="text-base sm:text-md text-white font-medium mb-8 md:max-w-[56%] mx-auto md:mx-0">
+          An award-winning AI driven platform redefining the way documents
+          are managed and distributed for frontline workers.
+        </p>
+
+        <div className="flex md:justify-start justify-center">
+          <button className="bg-blue-700 text-white text-medium max-w-[275px] text-[15px] font-medium px-4 py-2 rounded-md transition-all duration-300 transform hover:scale-105">
+            Try MyStaff App - See How It Works
+          </button>
+        </div>
+      </div>
+    </div>
+
+    {/* ===== IMAGE IN BOTTOM RIGHT ===== */}
+    <div className="absolute -bottom-40 right-0 p-6 sm:p-10">
+      <img
+        src="./diligram.png"
+        alt="Bottom Right Decoration"
+        className="w-24 object-contain"
+      />
+    </div>
+  </div>
+</section>
+
+  );
+};
+
+export default Hero;
