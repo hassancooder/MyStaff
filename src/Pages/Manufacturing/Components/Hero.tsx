@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import {Link} from "react-router-dom";
 
 const Hero: React.FC = () => {
   const [isWideScreen, setIsWideScreen] = useState(false);
@@ -33,9 +34,9 @@ const Hero: React.FC = () => {
             in real time.
           </p>
 
-          <button className="bg-blue-700 text-white text-medium max-w-[275px] text-[15px] font-medium px-2 py-2 rounded-md transition-all duration-300 transform hover:scale-105">
+          <Link to="/contact" className="bg-blue-700 text-white text-medium max-w-[275px] text-[15px] font-medium px-2 py-2 rounded-md transition-all duration-300 transform hover:scale-105">
             Try MyStaff app - See How It Works
-          </button>
+          </Link>
         </div>
       </div>
     </section>

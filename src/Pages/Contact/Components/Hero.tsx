@@ -5,7 +5,7 @@ const Hero: React.FC = () => {
     <section
       className={`min-h-[70vh] w-full overflow-hidden bg-cover bg-top flex items-center`}
       style={{
-        backgroundImage: "url('./pharma-hero-bg.png')",
+        backgroundImage: "url('./contact-hero-bg.webp')",
       }}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-20 py-16">

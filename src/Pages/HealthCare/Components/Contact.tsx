@@ -1,10 +1,12 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 const Contact: React.FC = () => {
   const impacts = [
     {
       id: 1,
-      description: "90%+ staff uptake on live deployments",
+      description:
+        "AI Automated Updates for all Company relevant regulation & policies documentation",
     },
     {
       id: 2,
@@ -21,6 +23,10 @@ const Contact: React.FC = () => {
     {
       id: 5,
       description: "Fully traceable, real time compliance dashboards",
+    },
+    {
+      id: 6,
+      description: "90%+ staff uptake on live deployments",
     },
   ];
 
@@ -72,9 +78,9 @@ const Contact: React.FC = () => {
                 See how MyStaff app can transform governance at your
                 organisation.
               </p>
-              <button className="bg-yellow-400 text-black font-semibold px-5 py-2 rounded-md hover:bg-yellow-500 transition xs:-ml-16 sm:ml-0">
+              <Link to="/contact" className="bg-yellow-400 text-black font-semibold px-5 py-2 rounded-md hover:bg-yellow-500 transition xs:-ml-16 sm:ml-0">
                 Request a Demo
-              </button>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import {Link} from "react-router-dom";
 
 const Hero: React.FC = () => {
   const [isWideScreen, setIsWideScreen] = useState(false);
@@ -39,9 +40,9 @@ const Hero: React.FC = () => {
             </p>
 
             <div className="flex md:justify-start justify-center">
-              <button className="bg-blue-700 text-white text-medium max-w-[275px] text-[15px] font-medium px-4 py-2 rounded-md transition-all duration-300 transform hover:scale-105">
+              <Link to="/contact" className="bg-blue-700 text-white text-medium max-w-[275px] text-[15px] font-medium px-4 py-2 rounded-md transition-all duration-300 transform hover:scale-105">
                 Try MyStaff App - See How It Works
-              </button>
+              </Link>
             </div>
             <div className="max-w-[600px]">
             <img src="./desktop-plus-mobile.png" className="lg:hidden mt-20 w-full h-full object-cover" alt="" /></div>
