@@ -55,7 +55,7 @@ const Hero: React.FC = () => {
     </div>
 
     {/* ===== IMAGE IN BOTTOM RIGHT ===== */}
-    <div className="absolute -bottom-40 right-0 p-6 sm:p-10">
+    <div className="absolute -bottom-20 lg:-bottom-40 right-0 p-6 sm:p-10">
       <img
         src="./diligram.png"
         alt="Bottom Right Decoration"
