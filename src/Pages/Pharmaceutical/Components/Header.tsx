@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
+import {Link } from "react-router-dom";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -8,13 +9,13 @@ const Header: React.FC = () => {
     <header className="absolute h-auto w-full top-0 py-3">
       <div className="container mx-auto px-0 sm:px-6 lg:px-16">
         <div className="flex justify-between items-center">
-          <div className="flex items-center" data-aos="fade-right">
+          <Link to="/" className="flex items-center cursor-pointer" data-aos="fade-right">
             <img
               src="./white-logo.png"
               alt="Logo"
               className="w-32 md:w-40 h-auto"
             />
-          </div>
+          </Link>
           <nav
             className="hidden md:flex items-center space-x-6"
             data-aos="zoom-in"
@@ -28,17 +29,17 @@ const Header: React.FC = () => {
             <a href="#contact" className="text-sm text-white hover:underline">
               Contact
             </a>
-            <a
-              href="/about"
+            <Link
+              to="/about"
               rel="noopener noreferrer"
               className="text-white py-2"
               onClick={() => setIsMenuOpen(false)}
             >
               About
-            </a>
+            </Link>
           </nav>
           <button
-            className="md:hidden text-white"
+            className="md:hidden text-white pr-4"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -69,14 +70,14 @@ const Header: React.FC = () => {
               >
                 Contact
               </a>
-              <a
-                href="/about"
+              <Link
+                to="/about"
                 rel="noopener noreferrer"
                 className="text-blue-600 py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
-              </a>
+              </Link>
             </div>
           </div>
         )}

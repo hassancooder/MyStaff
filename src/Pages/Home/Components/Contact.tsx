@@ -30,12 +30,12 @@ const Contact: React.FC = () => {
         <div className="w-full lg:w-[70vw] flex flex-col justify-between">
           <div className="flex flex-col xl:py-20 xl:px-20 lg:ml-2 xl:ml-0 container mx-auto sm:px-6 lg:px-10 2xl:px-16 3xl:ml-7">
             <h2
-              className="text-2xl sm:text-3xl font-bold text-blue-900 mb-2 leading-snug mt-4"
+              className="text-2xl sm:text-3xl font-bold text-blue-900 mb-2 leading-snug mt-4 p-2 lg:p-0"
               data-aos="fade-down"
             >
               Real Impact, <br /> Proven Outcomes
             </h2>
-            <div className="text-start mb-6 -ml-4">
+            <div className="text-start mb-6 -ml-4  p-2 lg:p-0">
               <img src="./line.png" alt="Line" className="w-[120px] h-auto" />
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-20 mt-10 px-10">

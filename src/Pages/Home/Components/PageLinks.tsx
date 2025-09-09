@@ -16,7 +16,7 @@ const PageLinks: React.FC = () => {
 
         {/* ===== RIGHT SIDE: BUTTONS ===== */}
         <div className="w-full max-w-md mt-20 lg:mt-0">
-          <div className="bg-white rounded-2xl lg:-xl py-8 px-12 flex flex-col gap-6">
+          <div className="bg-white rounded-2xl lg:shadow-xl py-8 px-6 lg:px-12 flex flex-col ml-6 lg:ml-0 gap-6">
             {/* Button 1 - Healthcare */}
             <Link
               to="/healthcare"
@@ -36,7 +36,7 @@ const PageLinks: React.FC = () => {
             </Link>
 
             {/* Button 2 - Pharmaceutical (Active) */}
-             <Link
+            <Link
               to="/pharmaceutical"
               className="relative flex items-center gap-4 p-4 ring-1 ring-blue-600 hover:bg-blue-600 hover:ring-transparent rounded-full transition group"
             >

@@ -27,13 +27,13 @@ const Hero: React.FC = () => {
             data-aos="fade-right"
           >
             <div className="max-w-[500px]">
-            <img src="./desktop-plus-mobile.png" className="w-full h-full object-cover" alt="" />
+            <img src="./desktop-plus-mobile.png" className="hidden lg:block w-full h-full object-cover" alt="" />
             </div>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-normal mb-2 leading-tight text-white">
               A critical tool to support {isWideScreen ? <br /> : " "}
               <span className="font-semibold">frontline governance</span>
             </h2>
-            <p className="text-base sm:text-md text-white font-medium mb-8 max-w-[56%]">
+            <p className="text-base sm:text-md text-white font-medium mb-8 lg:max-w-[56%]">
               An award-winning AI driven platform redefining the way documents
               are managed and distributed for frontline workers.
             </p>
@@ -43,18 +43,9 @@ const Hero: React.FC = () => {
                 Try MyStaff App - See How It Works
               </button>
             </div>
+            <div className="max-w-[600px]">
+            <img src="./desktop-plus-mobile.png" className="lg:hidden mt-20 w-full h-full object-cover" alt="" /></div>
           </div>
-
-          {/* <div
-            className="flex-1 flex justify-center md:justify-end"
-            data-aos="fade-left"
-          >
-            <img
-              src="./home-hero-front.png"
-              alt="Hero"
-              className="w-full max-w-md md:max-w-lg lg:max-w-xl rounded-lg object-contain"
-            />
-          </div> */}
         </div>
       </div>
     </section>

@@ -48,7 +48,7 @@ const Features: React.FC = () => {
 
   return (
     <section id="features" className="py-20 bg-white overflow-hidden">
-      <div className="container mx-auto sm:px-6 lg:px-10">
+      <div className="container mx-auto p-2 sm:px-6 lg:px-10">
         <h2
           className="text-2xl sm:text-3xl font-bold text-blue-800 mb-6 leading-snug"
           data-aos="fade-up"

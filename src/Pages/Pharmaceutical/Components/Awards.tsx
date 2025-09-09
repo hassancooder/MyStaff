@@ -5,7 +5,7 @@ const Awards: React.FC = () => {
 
   return (
     <section className="py-16 bg-blue-800 text-white">
-      <div className="flex items-center justify-between container mx-auto sm:px-6 lg:px-10">
+      <div className="flex items-center justify-between container mx-auto p-2 sm:px-6 lg:px-10">
         <h2
           className="text-3xl font-bold mb-8 text-start"
           data-aos="fade-right"

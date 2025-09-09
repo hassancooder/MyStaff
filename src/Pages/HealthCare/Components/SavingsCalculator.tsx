@@ -44,13 +44,13 @@ const SavingsCalculator: React.FC = () => {
   return (
     <section
       style={{ backgroundImage: "url('./healthcare-calc.png')" }}
-      className="py-12 md:py-16 bg-center min-h-[110vh] bg-cover text-white relative overflow-hidden"
+      className="py-12 md:py-16 bg-center min-h-[110vh] bg-cover text-white relative overflow-hidden p-2"
     >
       <div className="container mx-auto sm:px-6 lg:px-0">
       <div className="max-w-7xl relative flex md:flex-row h-[100vh] w-full items-center justify-start">
         <div className="w-full lg:w-1/2 md:pl-10">
           <h2
-            className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6"
+            className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 pr-8"
             data-aos="fade-down"
           >
             Estimate Savings with MyStaff app
@@ -68,8 +68,8 @@ const SavingsCalculator: React.FC = () => {
             className="mb-4 sm:mb-6 text-sm sm:text-base"
             data-aos="fade-right"
           >
-            Use the slider to input your organisation's
-            <br className="hidden sm:block" />
+            Use the slider to input your organisation's 
+            <br className="block" />
             operational spend and see estimated savings.
           </p>
 

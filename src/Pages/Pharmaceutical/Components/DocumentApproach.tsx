@@ -12,7 +12,7 @@ const DocumentApproach: React.FC = () => {
 
   return (
     <section className="py-16 bg-white">
-      <div className="container mx-auto sm:px-6 lg:px-10">
+      <div className="container mx-auto p-2 sm:px-6 lg:px-10">
         <h2
           className="text-2xl font-bold text-blue-800 mb-6"
           data-aos="fade-down"

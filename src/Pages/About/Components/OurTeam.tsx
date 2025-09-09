@@ -73,7 +73,7 @@ const OurTeam = () => {
           {teamMembers.map((member, idx) => (
             <div
               key={idx}
-              className="group relative bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-500"
+              className="group relative bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-500 min-h-[400px]"
             >
               {/* Image */}
               <div className="relative w-full flex justify-center pt-10">
@@ -104,7 +104,7 @@ const OurTeam = () => {
 
                 {/* Hidden Description (Revealed on Hover) */}
                 <div className="absolute bottom-0 left-0 right-0 top-10 p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <p className="text-sm text-gray-700 leading-relaxed text-left">
+                  <p className="text-[13px] sm:text-sm text-gray-700 leading-relaxed text-left">
                     {member.description}
                   </p>
                 </div>

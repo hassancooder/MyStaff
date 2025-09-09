@@ -30,7 +30,7 @@ const Hero: React.FC = () => {
               A critical tool to support {isWideScreen ? <br /> : " "}
               <span className="font-semibold">frontline governance</span>
             </h2>
-            <p className="text-base sm:text-md text-white font-medium mb-8 max-w-[56%]">
+            <p className="text-base sm:text-md text-white font-medium mb-8 lg:max-w-[56%]">
               An award-winning AI driven platform redefining the way documents
               are managed and distributed for frontline workers.
             </p>
@@ -41,17 +41,6 @@ const Hero: React.FC = () => {
               </button>
             </div>
           </div>
-
-          {/* <div
-            className="flex-1 flex justify-center md:justify-end"
-            data-aos="fade-left"
-          >
-            <img
-              src="./home-hero-front.png"
-              alt="Hero"
-              className="w-full max-w-md md:max-w-lg lg:max-w-xl rounded-lg object-contain"
-            />
-          </div> */}
         </div>
       </div>
     </section>

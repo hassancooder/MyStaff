@@ -50,7 +50,7 @@ const Features: React.FC = () => {
     <section id="features" className="py-20 bg-white overflow-hidden">
       <div className="container mx-auto sm:px-6 lg:px-10">
         <h2
-          className="text-2xl sm:text-3xl font-bold text-blue-800 mb-6 leading-snug"
+          className="text-2xl sm:text-3xl font-bold text-blue-800 mb-6 leading-snug p-2"
           data-aos="fade-up"
         >
           A tool for controlling knowledge, engagement,

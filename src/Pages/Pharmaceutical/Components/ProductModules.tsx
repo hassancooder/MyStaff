@@ -45,7 +45,7 @@ const ProductModules: React.FC = () => {
 
   return (
     <section id="modules" className="py-16 bg-white overflow-hidden">
-      <div className="relative container mx-auto sm:px-6 lg:px-10">
+      <div className="relative container mx-auto p-2 sm:px-6 lg:px-10">
         <h2 className="text-3xl font-bold text-blue-800 mb-6">
           Core Product Modules
         </h2>
