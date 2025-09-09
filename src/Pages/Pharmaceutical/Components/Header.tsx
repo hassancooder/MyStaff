@@ -26,7 +26,7 @@ const Header: React.FC = () => {
             <a href="#modules" className="text-sm text-white hover:underline">
               Modules
             </a>
-            <a href="#contact" className="text-sm text-white hover:underline">
+            <a href="/contact" className="text-sm text-white hover:underline">
               Contact
             </a>
             <Link
@@ -64,7 +64,7 @@ const Header: React.FC = () => {
                 Modules
               </a>
               <a
-                href="#contact"
+                href="/contact"
                 className="text-blue-600 py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
