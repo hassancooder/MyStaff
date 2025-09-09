@@ -10,7 +10,7 @@ const PageLinks: React.FC = () => {
           <img
             src="./desktop-plus-mobile.png"
             alt="Desktop and Mobile Showcase"
-            className="w-full min-w-[320px]  mt-14 mb-12 pb-12 lg:mb-0 lg:pb-0 max-w-[700px] object-contain z-10 absolute"
+            className="w-full min-w-[320px] mt-14 mb-12 pb-12 lg:mb-0 lg:pb-0 object-contain z-10 absolute"
           />
         </div>
 

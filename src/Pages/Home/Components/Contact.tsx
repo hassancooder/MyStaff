@@ -6,7 +6,7 @@ const Contact: React.FC = () => {
     {
       id: 1,
       description:
-        "AI Automated Updates for all Company relevant regulation & policies documentation",
+        "AI automated updates for all company relevant regulation & policies documentation",
     },
     {
       id: 2,

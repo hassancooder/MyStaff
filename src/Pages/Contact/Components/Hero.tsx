@@ -14,7 +14,13 @@ const Hero: React.FC = () => {
             className="flex-1 max-w-2xl text-center md:text-left"
             data-aos="fade-right"
           >
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-normal mb-2 leading-tight text-white">
+            <h2
+              className="text-2xl sm:text-3xl md:text-4xl font-normal mb-2 leading-tight text-white relative"
+              style={{
+                textShadow:
+                  "0 0 16px rgba(23, 37, 84, 0.9), 0 0 24px rgba(30, 58, 138, 0.8), 0 0 32px rgba(37, 99, 235, 0.7)",
+              }}
+            >
               <span className="font-semibold">CONTACT</span> US
             </h2>
           </div>
