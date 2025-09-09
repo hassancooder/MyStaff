@@ -20,7 +20,7 @@ const Header: React.FC = () => {
             className="hidden md:flex items-center space-x-6"
             data-aos="zoom-in"
           >
-            <a href="#contact" className="text-sm text-white hover:underline">
+            <a href="/contact" className="text-sm text-white hover:underline">
               Contact
             </a>
             <a
@@ -44,7 +44,7 @@ const Header: React.FC = () => {
           <div className="md:hidden mt-4 bg-white rounded shadow-lg">
             <div className="flex flex-col space-y-3 px-4 py-4">
               <a
-                href="#contact"
+                href="/contact"
                 className="text-blue-600 py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
