@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const PageLinks: React.FC = () => {
   return (
     <section className="relative w-full px-6 lg:px-20 mt-12 z-10">
-      <div className="container w-full max-w-6xl mx-auto flex flex-col lg:flex-row items-center rounded-2xl justify-between lg:-mt-44">
+      <div className="container w-full max-w-6xl mx-auto flex flex-col lg:flex-row items-center rounded-2xl justify-between lg:-mt-44 3xl:-mt-72">
         {/* ===== LEFT SIDE: DESKTOP + MOBILE SHOWCASE ===== */}
         <div className="relative flex-1 flex items-center justify-center">
           <img

@@ -6,7 +6,7 @@ const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="absolute h-auto w-full top-0 py-2 lg:py-3 z-20">
+    <header className="absolute h-auto w-full top-0 py-2 lg:py-3 z-40">
       <div className="container mx-auto px-0 sm:px-6 lg:px-16">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center cursor-pointer" data-aos="fade-right">

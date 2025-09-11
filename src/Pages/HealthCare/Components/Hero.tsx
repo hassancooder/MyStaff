@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
     <section
       className="relative h-full lg:min-h-[120vh] w-full lg:overflow-hidden bg-cover bg-bottom-center bg-top flex items-center"
       style={{
-        backgroundImage: "url('./healthcare-hero-bg.png')",
+        backgroundImage: `url('./${isWideScreen ? 'healthcare-hero-bg.png' : 'healthcare-hero-mobile-bg.png'}')`,
       }}
     >
       <div className="absolute top-0 left-0 w-full h-full bg-blue-900 bg-opacity-50 z-10"></div>
@@ -42,7 +42,7 @@ const Hero: React.FC = () => {
 
             <div className="flex md:justify-start justify-center">
               <Link to="/contact" className="bg-blue-700 text-white text-medium max-w-[275px] text-[15px] font-medium px-4 py-2 rounded-md transition-all duration-300 transform hover:scale-105">
-                Try MyStaff App - See How It Works
+                Try MyStaff app - See How It Works
               </Link>
             </div>
             <div className="absolute -bottom-[140px] left-1/2 transform -translate-x-1/2 w-full max-w-[350px] lg:max-w-[600px]">

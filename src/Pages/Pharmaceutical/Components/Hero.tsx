@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
 
             <div className="flex md:justify-start justify-center">
               <Link to="/contact" className="bg-blue-700 text-white text-medium max-w-[275px] text-[15px] font-medium px-4 py-2 rounded-md transition-all duration-300 transform hover:scale-105">
-                Try MyStaff App - See How It Works
+                Try MyStaff app - See How It Works
               </Link>
             </div>
           </div>
