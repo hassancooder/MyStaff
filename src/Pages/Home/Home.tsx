@@ -6,6 +6,7 @@ import Hero from "./Components/Hero";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import PageLinks from "./Components/PageLinks";
+import WatchNow from "./Components/WatchNow";
 function Home() {
   useEffect((): void => {
     AOS.init();
@@ -16,6 +17,9 @@ function Home() {
       <main>
         <Hero />
         <PageLinks />
+        <section className="container md:hidden px-6 -mt-6 mx-auto">
+          <WatchNow />
+        </section>
       </main>
       <Contact />
       <Footer />

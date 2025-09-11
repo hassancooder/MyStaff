@@ -16,12 +16,13 @@ const Hero: React.FC = () => {
   }, []);
   return (
     <section
-      className={`min-h-[120vh] w-full overflow-hidden bg-cover bg-bottom-center bg-top flex items-center`}
+      className="relative h-full lg:min-h-[120vh] w-full lg:overflow-hidden bg-cover bg-bottom-center bg-top flex items-center"
       style={{
         backgroundImage: "url('./healthcare-hero-bg.png')",
       }}
     >
-      <div className="container mx-auto px-4 sm:px-6 lg:px-20 py-16">
+      <div className="absolute top-0 left-0 w-full h-full bg-blue-900 bg-opacity-50 z-10"></div>
+      <div className="container mx-auto px-4 sm:px-6 lg:px-20 pt-44 pb-24 mt-8 z-20">
         <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-10">
           <div
             className="flex-1 max-w-2xl text-center md:text-left"
@@ -34,7 +35,7 @@ const Hero: React.FC = () => {
               A critical tool to support {isWideScreen ? <br /> : " "}
               <span className="font-semibold">frontline governance</span>
             </h2>
-            <p className="text-base sm:text-md text-white font-medium mb-8 lg:max-w-[56%]">
+            <p className="text-base sm:text-md text-white font-medium mb-4 lg:max-w-[56%]">
               An award-winning AI driven platform redefining the way documents
               are managed and distributed for frontline workers.
             </p>
@@ -44,7 +45,7 @@ const Hero: React.FC = () => {
                 Try MyStaff App - See How It Works
               </Link>
             </div>
-            <div className="max-w-[600px]">
+            <div className="absolute -bottom-[140px] left-1/2 transform -translate-x-1/2 w-full max-w-[350px] lg:max-w-[600px]">
             <img src="./desktop-plus-mobile.png" className="lg:hidden mt-20 w-full h-full object-cover" alt="" /></div>
           </div>
         </div>

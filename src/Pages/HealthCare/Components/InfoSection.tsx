@@ -1,7 +1,7 @@
 import { ArrowRight } from "lucide-react";
 const InfoSection = () => {
   return (
-    <div className="bg-[#DC9B16] py-8 px-4 sm:py-12 md:py-16">
+    <div className="bg-[#DC9B16] py-8 px-4 sm:py-12 md:py-16 pt-40 lg:16">
       <div className="relative flex flex-col md:flex-row gap-6 container mx-auto sm:px-6 lg:px-10">
         {/* Left Box */}
         <div className="bg-black text-white py-6 px-8 rounded-2xl flex-1">

@@ -1,0 +1,52 @@
+import React, { useState } from "react";
+
+const WatchNow: React.FC = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleOpen = () => setIsOpen(true);
+  const handleClose = () => setIsOpen(false);
+
+  return (
+    <div className="w-full relative z-50">
+      {/* ===== Thumbnail with Play Button ===== */}
+      <div className="relative w-full">
+        <img
+          src="./thumbnail-watchnow.png"
+          className="w-full h-full"
+          alt="Thumbnail"
+        />
+        <img
+          src="./watchnow-btn.png"
+          onClick={handleOpen}
+          className="w-auto h-12 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer hover:scale-105 transition-transform"
+          alt="Watch Now Button"
+        />
+      </div>
+
+      {/* ===== Popup Modal ===== */}
+      {isOpen && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-80 z-50">
+          {/* Close Button */}
+          <button
+            onClick={handleClose}
+            className="absolute top-4 right-4 text-white text-5xl font-bold hover:text-gray-300 z-50 cursor-pointer "
+          >
+            &times;
+          </button>
+
+          {/* Video Player */}
+          <div className="w-[90%] max-w-4xl relative z-50">
+            <video
+              src="./watchnow.mp4"
+              controls
+              autoPlay
+              className="w-full rounded-lg z-50"
+            />
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default WatchNow;
