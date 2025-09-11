@@ -8,38 +8,45 @@ const ProductModules: React.FC = () => {
       title: "Policies & Procedures",
       description:
         "Intelligent access, version control, and compliance tracking",
+      img: "./product1.png",
     },
     {
       id: 2,
       title: "Document Creation",
       description: "End-to-end workflow with full audit trails",
+      img: "./product2.png",
     },
     {
       id: 3,
       title: "Customer Information",
       description:
         "Manage & distribute customer-facing materials (leaflets, posters)",
+        img: "./product3.png",
     },
     {
-      id: 1,
+      id: 4,
       title: "App",
       description: "Mobile & web access with alerts, favorites & offline mode",
+      img: "./product4.png",
     },
     {
       id: 5,
       title: "Analytics",
       description: "Real-time compliance dashboards & engagement reporting",
+      img: "./product5.png",
     },
     {
       id: 6,
       title: "Notifications",
       description: "Automated alerts for new docs, updates & compliance issues",
+      img: "./product6.png",
     },
     {
       id: 7,
       title: "QR Code-Based Access",
       description:
         "Instant, contactless access via QR codes—ideal for single-use & frontline use",
+      img: "./pharma-product7.png",
     },
   ];
 
@@ -64,7 +71,7 @@ const ProductModules: React.FC = () => {
               key={index}
               title={module.title}
               description={module.description}
-              productId={module.id}
+              img={module.img}
             />
           ))}
         </div>

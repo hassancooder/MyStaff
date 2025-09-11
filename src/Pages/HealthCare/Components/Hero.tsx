@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
         backgroundImage: `url('./${isWideScreen ? 'healthcare-hero-bg.png' : 'healthcare-hero-mobile-bg.png'}')`,
       }}
     >
-      <div className="absolute top-0 left-0 w-full h-full bg-blue-900 bg-opacity-50 z-10"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-blue-900 md:bg-transparent bg-opacity-50 z-10"></div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-20 pt-44 pb-24 mt-8 z-20">
         <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-10">
           <div

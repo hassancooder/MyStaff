@@ -7,7 +7,7 @@ const WatchNow: React.FC = () => {
   const handleClose = () => setIsOpen(false);
 
   return (
-    <div className="w-full relative z-50">
+    <div className="w-full relative z-60">
       {/* ===== Thumbnail with Play Button ===== */}
       <div className="relative w-full">
         <img
