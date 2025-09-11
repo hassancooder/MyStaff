@@ -15,8 +15,8 @@ const PageLinks: React.FC = () => {
         </div>
 
         {/* ===== RIGHT SIDE: BUTTONS ===== */}
-        <div className="w-full max-w-md mt-11 lg:mt-0">
-          <div className="bg-white rounded-2xl lg:shadow-xl p-6 lg:px-12 flex flex-col ml-6 lg:ml-0 gap-4 lg:gap-6">
+        <div className="w-full max-w-md mt-11 lg:mt-0 z-30">
+          <div className="lg:bg-white rounded-2xl lg:shadow-xl p-6 lg:px-12 flex flex-col ml-6 lg:ml-0 gap-4 lg:gap-6">
             {/* Button 1 - Healthcare */}
             <Link
               to="/healthcare"
