@@ -38,9 +38,7 @@ const Hero: React.FC = () => {
         <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-10">
           {/* ===== LEFT COLUMN (Original Text) ===== */}
           <div
-            className="flex-1 max-w-2xl text-center md:text-left"
-            data-aos="fade-right"
-          >
+            className="flex-1 max-w-2xl text-center md:text-left 2xl:-mt-64">
             <h2 className="text-xl mt-4 lg:mt-0 sm:text-3xl md:text-4xl font-normal mb-2 leading-tight text-white px-4 md:px-0">
               A critical tool to support {isWideScreen ? <br /> : " "}
               <span className="font-semibold">frontline governance</span>
@@ -63,7 +61,7 @@ const Hero: React.FC = () => {
 
           {/* ===== WatchNow COLUMN (Newly Added) ===== */}
           <div
-            className="absolute -top-[35%] 3xl:-top-[80%] 3xl:right-[2%] right-[1%] max-w-[400px] hidden lg:block"
+            className="absolute -top-[35%] 2xl:-top-[190%] 2xl:right-[2%] right-[1%] max-w-[400px] hidden lg:block"
             // data-aos="fade-left"
           >
             <WatchNow />
