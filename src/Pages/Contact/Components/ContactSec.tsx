@@ -16,12 +16,6 @@ const ContactSec = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Form submitted:", formData);
-    // Handle form submission here
-  };
-
   return (
     <div className="bg-gray-50 py-16 px-4">
       <div className="max-w-7xl mx-auto">
@@ -38,7 +32,13 @@ const ContactSec = () => {
               </p>
             </div>
 
-            <div className="space-y-6">
+            {/* FormSubmit.co Integration */}
+            <form
+              action="https://formsubmit.co/info@diligram.com"
+              method="POST"
+              className="space-y-6"
+            >
+
               <div className="space-y-2">
                 <label htmlFor="name" className="text-gray-700 font-medium">
                   Name :
@@ -49,6 +49,7 @@ const ContactSec = () => {
                   name="name"
                   value={formData.name}
                   onChange={handleInputChange}
+                  required
                   className="w-full px-0 py-3 border-0 border-b-2 border-gray-300 bg-transparent focus:border-blue-600 focus:outline-none focus:ring-0 transition-colors duration-200"
                 />
               </div>
@@ -63,6 +64,7 @@ const ContactSec = () => {
                   name="email"
                   value={formData.email}
                   onChange={handleInputChange}
+                  required
                   className="w-full px-0 py-3 border-0 border-b-2 border-gray-300 bg-transparent focus:border-blue-600 focus:outline-none focus:ring-0 transition-colors duration-200"
                 />
               </div>
@@ -83,23 +85,21 @@ const ContactSec = () => {
 
               <div className="pt-8">
                 <button
-                  type="button"
-                  onClick={handleSubmit}
+                  type="submit"
                   className="bg-slate-700 hover:bg-slate-800 text-white px-8 py-4 flex items-center gap-3 font-medium transition-colors duration-200 group"
                 >
                   Submit
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
                 </button>
               </div>
-            </div>
+            </form>
           </div>
 
           {/* Right Side - Contact Info and Map */}
           <div className="space-y-8">
             <div className="space-y-6">
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-800">
-                CONNECT{" "}
-                <span className="text-blue-600 font-bold">WITH US</span>
+                CONNECT <span className="text-blue-600 font-bold">WITH US</span>
               </h2>
 
               <div className="space-y-4">
