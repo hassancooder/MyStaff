@@ -49,7 +49,7 @@ const Hero: React.FC = () => {
               are managed and distributed for frontline workers.
             </p>
 
-            <div className="flex md:justify-start justify-center mt-4 mb-0 lg:mb-0">
+            <div className="flex md:justify-start justify-center mt-6 mb-2">
               <Link
                 to="/contact"
                 className="bg-blue-700 text-white text-sm md:text-medium max-w-[275px] text-[15px] font-medium px-4 py-2 rounded-md transition-all duration-300 transform hover:scale-105"
