@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { ArrowRight } from "lucide-react";
 
 const ContactSec = () => {
@@ -6,6 +6,7 @@ const ContactSec = () => {
     name: "",
     email: "",
     company: "",
+    message: "",
   });
 
   const handleInputChange = (e) => {
@@ -38,7 +39,6 @@ const ContactSec = () => {
               method="POST"
               className="space-y-6"
             >
-
               <div className="space-y-2">
                 <label htmlFor="name" className="text-gray-700 font-medium">
                   Name :
@@ -81,6 +81,20 @@ const ContactSec = () => {
                   onChange={handleInputChange}
                   className="w-full px-0 py-3 border-0 border-b-2 border-gray-300 bg-transparent focus:border-blue-600 focus:outline-none focus:ring-0 transition-colors duration-200"
                 />
+              </div>
+
+              <div className="space-y-2">
+                <label htmlFor="message" className="text-gray-700 font-medium">
+                  Message :
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  onChange={handleInputChange}
+                  className="w-full px-0 py-3 border-0 border-b-2 border-gray-300 bg-transparent focus:border-blue-600 focus:outline-none focus:ring-0 transition-colors duration-200"
+                >
+                  {formData.message}
+                </textarea>
               </div>
 
               <div className="pt-8">
