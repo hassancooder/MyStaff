@@ -34,11 +34,8 @@ const ContactSec = () => {
             </div>
 
             {/* FormSubmit.co Integration */}
-            <form
-              action="https://formsubmit.co/info@diligram.com"
-              method="POST"
-              className="space-y-6"
-            >
+            <form action="https://submit-form.com/siE6SrU7O"
+              className="space-y-6">
               <div className="space-y-2">
                 <label htmlFor="name" className="text-gray-700 font-medium">
                   Name :
