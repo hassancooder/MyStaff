@@ -20,8 +20,8 @@ const Hero: React.FC = () => {
       style={{
         backgroundImage: `url('./${
           isWideScreen
-            ? "healthcare-hero-bg.png"
-            : "healthcare-hero-mobile-bg.png"
+            ? "healthcare-hero-bg.webp"
+            : "healthcare-hero-mobile-bg.webp"
         }')`,
       }}
     >
@@ -34,7 +34,7 @@ const Hero: React.FC = () => {
           >
             <div className="max-w-[500px]">
               <img
-                src="./desktop-plus-mobile.png"
+                src="./desktop-plus-mobile.webp"
                 className="hidden lg:block w-full h-full object-cover"
                 alt=""
               />
@@ -58,7 +58,7 @@ const Hero: React.FC = () => {
             </div>
             <div className="absolute -bottom-[115px] left-1/2 transform -translate-x-1/2 w-full max-w-[350px] lg:max-w-[600px]">
               <img
-                src="./desktop-plus-mobile.png"
+                src="./desktop-plus-mobile.webp"
                 className="lg:hidden w-full h-full object-cover"
                 alt=""
               />

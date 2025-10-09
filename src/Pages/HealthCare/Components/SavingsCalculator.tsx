@@ -43,7 +43,7 @@ const SavingsCalculator: React.FC = () => {
 
   return (
     <section
-      style={{ backgroundImage: "url('./healthcare-calc.png')" }}
+      style={{ backgroundImage: "url('./healthcare-calc.webp')" }}
       className="py-12 md:py-16 bg-center min-h-[110vh] bg-cover text-white relative overflow-hidden p-2"
     >
       <div className="container mx-auto sm:px-6 lg:px-0">
@@ -58,7 +58,7 @@ const SavingsCalculator: React.FC = () => {
 
           <div className="text-start mb-2">
             <img
-              src="./line.png"
+              src="./line.webp"
               alt="Line"
               className="w-[100px] sm:w-[150px] h-full self-start ml-[-10px] sm:ml-[-20px]"
             />

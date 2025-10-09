@@ -8,7 +8,7 @@ const PageLinks: React.FC = () => {
         {/* ===== LEFT SIDE: DESKTOP + MOBILE SHOWCASE ===== */}
         <div className="relative flex-1 flex items-center justify-center">
           <img
-            src="./desktop-plus-mobile.png"
+            src="./desktop-plus-mobile.webp"
             alt="Desktop and Mobile Showcase"
             className="w-full min-w-[300px] mt-12 mb-10 pb-12 lg:mb-0 lg:pb-0 object-contain z-10 absolute px-4 lg:px-0"
           />
@@ -25,7 +25,7 @@ const PageLinks: React.FC = () => {
               {/* Icon outside button */}
               <div className="absolute -left-8 w-12 lg:w-16 h-12 lg:h-16 flex items-center justify-center rounded-full ring-1 ring-blue-600 bg-white">
                 <img
-                  src="./healthcare.png"
+                  src="./healthcare.webp"
                   alt="Healthcare"
                   className="w-7 lg:w-8 h-7 lg:h-8 object-contain"
                 />
@@ -43,7 +43,7 @@ const PageLinks: React.FC = () => {
               {/* Icon outside button */}
               <div className="absolute -left-8 w-12 lg:w-16 h-12 lg:h-16 flex items-center justify-center rounded-full ring-1 ring-blue-600 bg-white">
                 <img
-                  src="./pharma.png"
+                  src="./pharma.webp"
                   alt="Manufacturing"
                   className="w-7 lg:w-8 h-7 lg:h-8 object-contain"
                 />
@@ -61,7 +61,7 @@ const PageLinks: React.FC = () => {
               {/* Icon outside button */}
               <div className="absolute -left-8 w-12 lg:w-16 h-12 lg:h-16 flex items-center justify-center rounded-full  ring-1 ring-blue-600 bg-white">
                 <img
-                  src="./manufact.png"
+                  src="./manufact.webp"
                   alt="Manufacturing"
                   className="w-7 lg:w-8 h-7 lg:h-8 object-contain"
                 />

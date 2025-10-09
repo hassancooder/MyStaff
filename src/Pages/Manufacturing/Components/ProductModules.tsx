@@ -52,7 +52,7 @@ const ProductModules: React.FC = () => {
 
         <div className="text-start mb-10">
           <img
-            src="./line.png"
+            src="./line.webp"
             alt="Line"
             className="w-[150px] h-full self-start -ml-5"
           />

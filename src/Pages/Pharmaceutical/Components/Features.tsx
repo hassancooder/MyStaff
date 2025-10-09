@@ -60,7 +60,7 @@ const Features: React.FC = () => {
 
         <div className="text-start mb-10">
           <img
-            src="./line.png"
+            src="./line.webp"
             alt="Line"
             className="w-[120px] sm:w-[150px] ml-[-10px] sm:ml-[-20px]"
           />
@@ -71,12 +71,12 @@ const Features: React.FC = () => {
             return (
               <div key={feature.id} className=" flex flex-col w-full py-2">
                 <div className=" relative w-full flex items-end ">
-                  <img src={`./pharmaf${feature.id}.png`} className="w-full" />
+                  <img src={`./pharmaf${feature.id}.webp`} className="w-full" />
                   <h3 className="absolute text-white bottom-7 left-8 text-2xl lg:text-3xl 3xl:bottom-12 3xl:left-20 3xl:text-4xl">
                     {feature.title}
                   </h3>
                   <img
-                    src={`./num${feature.id}.png`}
+                    src={`./num${feature.id}.webp`}
                     alt="Number"
                     className="absolute top-0 left-0  w-12 h-12 3xl:w-20 3xl:h-20"
                   />

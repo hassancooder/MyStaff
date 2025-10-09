@@ -18,11 +18,11 @@ const ModuleCard: React.FC<ModuleCardProps> = ({
     >
       <div
         className="bg-center bg-contain bg-no-repeat p-4 h-full w-full flex flex-col items-center lg:items-start text-center lg:text-left"
-        style={{ backgroundImage: "url('./cardBottom.png')" }}
+        style={{ backgroundImage: "url('./cardBottom.webp')" }}
       >
         <div className="w-full relative flex lg:justify-start  mb-4 -mt-10 ml-[50%] md:ml-[10%] 2xl:ml-[20%] 3xl:ml-[23%]">
           <img
-            src={`./product${productId}.png`}
+            src={`./product${productId}.webp`}
             alt="MyStaff App"
             className="object-contain w-[100px] sm:w-[140px] md:w-[180px] md:h-[120px] h-[100px] sm:h-[120px] 3xl:w-[200px] 3xl:h-[200px] lg:w-[140px] lg:h-[140px] 3xl:mb-0 -mb-3 "
           />

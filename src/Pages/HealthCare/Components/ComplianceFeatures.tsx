@@ -6,41 +6,41 @@ const ComplianceFeatures: React.FC = () => {
     {
       title:
         "<span class='font-semibold'>Staff alerts</span> for new/updated<br/> documents",
-      image: "./new_sec/cf-05.png",
+      image: "./new_sec/cf-05.webp",
     },{
       title:
         "<span class='font-semibold'>Automated version control</span><br/> & document history",
-      image: "./hcf-02.png",
+      image: "./hcf-02.webp",
     },
     {
       title:
         "<span class='font-semibold'>Auto-characterisation</span><br/> & tagging (AI-based)",
-      image: "./new_sec/cf-03.png",
+      image: "./new_sec/cf-03.webp",
     },
     {
       title:
         "Searchable PDF rendering<br/> with <span class='font-semibold'>mobile optimization</span>",
-      image: "./hcf-04.png",
+      image: "./hcf-04.webp",
     },{
       title:
         "Document creation <span class='font-semibold'>approval<br/> & author reminders</span>",
-      image: "./new_sec/cf-01.png",
+      image: "./new_sec/cf-01.webp",
     },
     
     {
       title:
         "<span class='font-semibold'>Mobile-friendly</span> policy &<br/> guideline access",
-      image: "./hcf-06.png",
+      image: "./hcf-06.webp",
     },
     {
       title:
         "<span class='font-semibold'>Audit-ready</span> access logs<br/> & compliance tracking",
-      image: "./new_sec/cf-07.png",
+      image: "./new_sec/cf-07.webp",
     },
     {
       title:
         "<span class='font-semibold'>Offline access</span> to critical<br/> compliance documents",
-      image: "./hcf-08.png",
+      image: "./hcf-08.webp",
     },
   ];
 
@@ -56,7 +56,7 @@ const ComplianceFeatures: React.FC = () => {
 
         <div className="text-start mb-4">
           <img
-            src="./line.png"
+            src="./line.webp"
             alt="Line"
             className="w-[120px] sm:w-[150px] ml-[-10px] sm:ml-[-20px]"
           />

@@ -71,7 +71,7 @@ const Hero: React.FC = () => {
         {/* ===== IMAGE IN BOTTOM RIGHT ===== */}
         <div className="absolute -bottom-20 lg:-bottom-40 right-0 p-6 sm:p-10 hidden lg:block">
           <img
-            src="./diligram.png"
+            src="./diligram.webp"
             alt="Bottom Right Decoration"
             className="w-24 object-contain"
           />

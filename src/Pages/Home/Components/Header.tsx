@@ -11,7 +11,7 @@ const Header: React.FC = () => {
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center cursor-pointer" data-aos="fade-right">
             <img
-              src="./white-logo.png"
+              src="./white-logo.webp"
               alt="Logo"
               className="w-24 md:w-40 h-auto"
             />

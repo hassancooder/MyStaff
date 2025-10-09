@@ -27,7 +27,7 @@ const UseCases: React.FC = () => {
                   </p>
                 </div>
                 <img
-                  src="./new_sec/quality.png"
+                  src="./new_sec/quality.webp"
                   alt="Quality"
                   className="w-[50px] ml-2"
                 />
@@ -45,7 +45,7 @@ const UseCases: React.FC = () => {
                   </p>
                 </div>
                 <img
-                  src="./new_sec/sales.png"
+                  src="./new_sec/sales.webp"
                   alt="Sales"
                   className="w-[50px] ml-2"
                 />
@@ -57,12 +57,12 @@ const UseCases: React.FC = () => {
           <div className="flex justify-center my-16">
             <div className="relative w-[150px] h-[150px]">
               <img
-                src="./new_sec/wheel-main.png"
+                src="./new_sec/wheel-main.webp"
                 alt="Wheel center"
                 className="w-full h-full"
               />
               <img
-                src="./new_sec/wheel-border.png"
+                src="./new_sec/wheel-border.webp"
                 alt="Wheel border"
                 className="absolute top-0 left-0 w-full h-full scale-[1.6]"
               />
@@ -83,7 +83,7 @@ const UseCases: React.FC = () => {
                   </p>
                 </div>
                 <img
-                  src="./new_sec/supply.png"
+                  src="./new_sec/supply.webp"
                   alt="Supply"
                   className="w-[50px] ml-2"
                 />
@@ -100,7 +100,7 @@ const UseCases: React.FC = () => {
                   </p>
                 </div>
                 <img
-                  src="./new_sec/hr.png"
+                  src="./new_sec/hr.webp"
                   alt="HR"
                   className="w-[50px] ml-2"
                 />
@@ -117,7 +117,7 @@ const UseCases: React.FC = () => {
                   </p>
                 </div>
                 <img
-                  src="./new_sec/legal.png"
+                  src="./new_sec/legal.webp"
                   alt="Legal"
                   className="w-[50px] ml-2"
                 />
@@ -130,13 +130,13 @@ const UseCases: React.FC = () => {
         <div className="hidden md:flex justify-center items-center py-28 lg:py-52 w-100 relative">
           <div className="relative">
             <img
-              src="./new_sec/wheel-main.png"
+              src="./new_sec/wheel-main.webp"
               alt=""
               className="w-full max-w-[120px] lg:max-w-[170px] h-full max-h-[120px] lg:max-h-[170px]"
             />
             <div>
               <img
-                src="./new_sec/wheel-border.png"
+                src="./new_sec/wheel-border.webp"
                 alt=""
                 className="absolute top-0 left-0 scale-[1.60]"
               />
@@ -146,7 +146,7 @@ const UseCases: React.FC = () => {
             <div className="absolute top-2 md:-left-[150%] lg:-left-[180%]">
               <div className="bg-white border-2 border-[#164989] ring-2 ring-[#06264b] ring-opacity-30 box-shadow-2xl shadow-[#164989] rounded-2xl pl-4 py-4 lg:py-6 pr-10 lg:pr-12 relative md:max-w-[200px] lg:max-w-[250px] flex justify-center items-center flex-col">
                 <img
-                  src="./new_sec/quality.png"
+                  src="./new_sec/quality.webp"
                   alt=""
                   className="w-[50px] lg:w-[70px] absolute left-[90%] top-50 "
                 />
@@ -164,7 +164,7 @@ const UseCases: React.FC = () => {
             <div className="absolute md:-top-[100%] lg:-top-[110%] md:left-[-26.5%] lg:left-[-26.5%]">
               <div className="bg-white border-2 border-[#164989] ring-2 ring-[#06264b] ring-opacity-30 box-shadow-2xl shadow-[#164989] rounded-2xl p-4 lg:p-6 relative md:w-[200px] lg:w-[260px] flex justify-center items-center flex-col">
                 <img
-                  src="./new_sec/sales.png"
+                  src="./new_sec/sales.webp"
                   alt=""
                   className="w-[50px] lg:w-[70px] absolute left-[35%] top-[75%]"
                 />
@@ -182,7 +182,7 @@ const UseCases: React.FC = () => {
             <div className="absolute top-2 md:-right-[150%] lg:-right-[183%]">
               <div className="bg-white border-2 border-[#164989] ring-2 ring-[#06264b] ring-opacity-30 box-shadow-2xl shadow-[#164989] rounded-2xl pr-4 py-4 lg:py-6 pl-10 lg:pl-12 relative md:max-w-[200px] lg:max-w-[250px] flex justify-center items-center flex-col">
                 <img
-                  src="./new_sec/supply.png"
+                  src="./new_sec/supply.webp"
                   alt=""
                   className="w-[50px] lg:w-[70px] absolute right-[90%] top-50 "
                 />
@@ -201,7 +201,7 @@ const UseCases: React.FC = () => {
             <div className="absolute md:top-[110%] lg:top-[125%] md:-right-[110%] lg:-right-[133%]">
               <div className="bg-white border-2 border-[#164989] ring-2 ring-[#06264b] ring-opacity-30 box-shadow-2xl shadow-[#164989] rounded-2xl pr-4 py-4 lg:py-6 pl-10 lg:pl-12 relative md:max-w-[200px] lg:max-w-[250px] flex justify-center items-center flex-col">
                 <img
-                  src="./new_sec/hr.png"
+                  src="./new_sec/hr.webp"
                   alt=""
                   className="w-[50px] lg:w-[70px] absolute left-0 top-[-35%]"
                 />
@@ -220,7 +220,7 @@ const UseCases: React.FC = () => {
             <div className="absolute md:top-[110%] lg:top-[125%] md:-left-[110%] lg:-left-[133%]">
               <div className="bg-white border-2 border-[#164989] ring-2 ring-[#06264b] ring-opacity-30 box-shadow-2xl shadow-[#164989] rounded-2xl pl-4 py-4 lg:py-6 pr-10 lg:pr-12 relative md:max-w-[200px] lg:max-w-[250px] flex justify-center items-center flex-col">
                 <img
-                  src="./new_sec/legal.png"
+                  src="./new_sec/legal.webp"
                   alt=""
                   className="w-[50px] lg:w-[70px] absolute right-0 top-[-35%]"
                 />

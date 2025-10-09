@@ -18,7 +18,7 @@ const ModuleCard: React.FC<ModuleCardProps> = ({
     >
       <div
         className="bg-center bg-contain bg-no-repeat p-4 h-full w-full flex flex-col items-center lg:items-start text-center lg:text-left"
-        style={{ backgroundImage: "url('./cardBottom.png')" }}
+        style={{ backgroundImage: "url('./cardBottom.webp')" }}
       >
         <div className="w-full relative flex lg:justify-start  mb-4 -mt-10 ml-[50%] md:ml-[10%] 2xl:ml-[20%] 3xl:ml-[23%]">
           <img

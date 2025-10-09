@@ -1,6 +1,6 @@
 const teamMembers = [
   {
-    img: "./t1.png",
+    img: "./t1.webp",
     name: "Uwe",
     highlight: "Placzek",
     title: "CEO",
@@ -9,7 +9,7 @@ const teamMembers = [
       "Uwe is an innovation and product development expert, seasoned manager and serial entrepreneur. He created and managed Europe's largest digital music platform and the first pan-European movie streaming service – thereby actively driving the digital transformation of two entire industries. Uwe holds a University degree in Design & Development and held senior positions in Engineering, Telecom, IT and Digital Media.",
   },
   {
-    img: "./t2.png",
+    img: "./t2.webp",
     name: "Kurt",
     highlight: "Moser",
     title: "CHAIRMAN",
@@ -18,7 +18,7 @@ const teamMembers = [
       "As an active private equity Investor, Kurt sits on the board of various private companies, some of which he has helped to incorporate as a founding member. In his career he has held several senior positions in the banking, financial information, and software industry, and he has lived and worked in the major global financial centres. Prior to his retirement he held the position of Chief Operating Officer of a global division of one of the world’s largest Fintech Companies.",
   },
   {
-    img: "./t3.png",
+    img: "./t3.webp",
     name: "Leslie",
     highlight: "Golding",
     title: "CEO UK",
@@ -31,7 +31,7 @@ const teamMembers = [
     highlight: "Zimmer",
     title: "CPO",
     subTitle: "> Product",
-    img: "./t4.png",
+    img: "./t4.webp",
     description:
       "Darren was a key member of the team that delivered Europe’s first movie streaming platform Acetrax as well as over 5 years management experience at Sky both in the UK and Europe. He is single mindedly focused on the customer and solving problems with innovative but easy to use solutions.",
   },
@@ -40,7 +40,7 @@ const teamMembers = [
     highlight: "Amiel",
     title: "CRO",
     subTitle: "> Revenue",
-    img: "./t5.png",
+    img: "./t5.webp",
     description:
       "Antoine Amiel is a dynamic sales leader with a strong track record in driving revenue and business growth since the last 15 years. Previously, as Head of Sales for Orange Business for DACH, he led teams across several countries, developed Go-to-Market strategies, and implemented MEDDIC methodologies to enhance performance. Antoine brings extensive experience from his leadership senior roles at Starmind, FIS, and Thomson Reuters, where he managed global sales teams, expanded into new markets, and fostered strategic partnerships.",
   },
@@ -49,7 +49,7 @@ const teamMembers = [
     highlight: "Wegler",
     title: "CDO",
     subTitle: "> Delivery",
-    img: "./t6.png",
+    img: "./t6.webp",
     description:
       "Christian was in the founding team of one of the first Free2Play Gaming-Platforms in Europe, launched and operated more than 10 Online Games as a Project Manager and built up the PM&QA team as Head of Project Management for the Burda and ProSiebenSat.1 Media groups. He has an eye for detail and keeps the general overview at the same time, which enables him to deliver our projects in time & quality. Christian studied Business Economics in Munich and is also a skilled coach & trainer, which helps him to deliver great results in any kind of environment.",
   },

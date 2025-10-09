@@ -11,12 +11,12 @@ const WatchNow: React.FC = () => {
       {/* ===== Thumbnail with Play Button ===== */}
       <div className="relative w-full">
         <img
-          src="./thumbnail-watchnow.png"
+          src="./thumbnail-watchnow.webp"
           className="w-full h-full"
           alt="Thumbnail"
         />
         <img
-          src="./watchnow-btn.png"
+          src="./watchnow-btn.webp"
           onClick={handleOpen}
           className="w-auto h-12 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer hover:scale-105 transition-transform"
           alt="Watch Now Button"

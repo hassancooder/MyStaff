@@ -25,7 +25,7 @@ const ComparisonTable: React.FC = () => {
 
         <div className="text-start mb-6">
           <img
-            src="./line.png"
+            src="./line.webp"
             alt="Line"
             className="w-[120px] sm:w-[150px] ml-[-10px] sm:ml-[-20px]"
           />

@@ -15,7 +15,7 @@ const Header: React.FC = () => {
             data-aos="fade-right"
           >
             <img
-              src="./white-logo.png"
+              src="./white-logo.webp"
               alt="Logo"
               className="w-32 md:w-40 h-auto"
             />

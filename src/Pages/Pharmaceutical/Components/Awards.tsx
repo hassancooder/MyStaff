@@ -19,7 +19,7 @@ const Awards: React.FC = () => {
           {awards.map((award, index) => (
             <div
               key={index}
-              style={{ backgroundImage: `url('./award${award}.png')` }}
+              style={{ backgroundImage: `url('./award${award}.webp')` }}
               data-aos={`${
                 award === 1 ? "fade-right" : award === 4 ? "fade-left" : ""
               }`}

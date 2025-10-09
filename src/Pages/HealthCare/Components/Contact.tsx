@@ -42,7 +42,7 @@ const Contact: React.FC = () => {
               Real Impact, <br /> Proven Outcomes
             </h2>
             <div className="text-start mb-6 -ml-4 p-2">
-              <img src="./line.png" alt="Line" className="w-[120px] h-auto" />
+              <img src="./line.webp" alt="Line" className="w-[120px] h-auto" />
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-20 mt-10 px-10">
               {impacts.map((impact) => (
@@ -52,7 +52,7 @@ const Contact: React.FC = () => {
                   data-aos="fade-right"
                 >
                   <img
-                    src={`./impact${impact.id}.png`}
+                    src={`./impact${impact.id}.webp`}
                     alt={`Impact ${impact.id}`}
                     className="w-[80px] h-[80px] object-contain"
                   />
@@ -72,7 +72,7 @@ const Contact: React.FC = () => {
                 Let’s Talk
               </h3>
               <div className="text-start xs:-ml-20 sm:-ml-3">
-                <img src="./line.png" alt="Line" className="w-[120px] h-auto" />
+                <img src="./line.webp" alt="Line" className="w-[120px] h-auto" />
               </div>
               <p className="mb-4 text-sm sm:text-base xs:-ml-16 sm:ml-0">
                 See how MyStaff app can transform governance at your
@@ -90,7 +90,7 @@ const Contact: React.FC = () => {
           data-aos="fade-left"
         >
           <img
-            src="./impacts.png"
+            src="./impacts.webp"
             alt="Impact Visual"
             className="w-full max-w-[500px] lg:max-w-[60vw] h-auto object-contain"
           />
