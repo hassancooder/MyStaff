@@ -8,7 +8,7 @@ const ProductModules: React.FC = () => {
       title: "Policies & Procedures",
       description:
         "Intelligent access, version control, and compliance tracking",
-      img: "./product1.webp",
+      img: "./half-mobileapp-new.webp",
     },
     {
       id: 2,
@@ -21,13 +21,13 @@ const ProductModules: React.FC = () => {
       title: "Customer Information",
       description:
         "Manage & distribute customer-facing materials (leaflets, posters)",
-        img: "./product3.webp",
+      img: "./product3.webp",
     },
     {
       id: 4,
       title: "App",
       description: "Mobile & web access with alerts, favorites & offline mode",
-      img: "./product4.webp",
+      img: "./half-mobileapp-new.webp",
     },
     {
       id: 5,
@@ -39,7 +39,7 @@ const ProductModules: React.FC = () => {
       id: 6,
       title: "Notifications",
       description: "Automated alerts for new docs, updates & compliance issues",
-      img: "./product6.webp",
+      img: "./without-sasas.webp",
     },
     {
       id: 7,

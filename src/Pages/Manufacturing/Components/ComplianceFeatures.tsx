@@ -25,7 +25,7 @@ const ComplianceFeatures: React.FC = () => {
     {
       title:
         "Document creation <span class='font-semibold'>approval<br/> & author reminders</span>",
-      image: "./new_sec/cf-01.webp",
+      image: "./without-nt.webp",
     },
     {
       title:

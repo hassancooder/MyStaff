@@ -4,12 +4,14 @@ interface ModuleCardProps {
   title: string;
   description: string;
   productId: number;
+  img: string;  
 }
 
 const ModuleCard: React.FC<ModuleCardProps> = ({
   title,
   description,
   productId,
+  img,
 }: ModuleCardProps) => {
   return (
     <div
@@ -22,7 +24,7 @@ const ModuleCard: React.FC<ModuleCardProps> = ({
       >
         <div className="w-full relative flex lg:justify-start  mb-4 -mt-10 ml-[50%] md:ml-[10%] 2xl:ml-[20%] 3xl:ml-[23%]">
           <img
-            src={`./product${productId}.webp`}
+            src={img}
             alt="MyStaff App"
             className="object-contain w-[100px] sm:w-[140px] md:w-[180px] md:h-[120px] h-[100px] sm:h-[120px] 3xl:w-[200px] 3xl:h-[200px] lg:w-[140px] lg:h-[140px] 3xl:mb-0 -mb-3 "
           />
