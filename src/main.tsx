@@ -6,6 +6,7 @@ import Contact from "./Pages/Contact/Contact.tsx";
 import Manufacturing from "./Pages/Manufacturing/Manufacturing.tsx";
 import HealthCare from "./Pages/HealthCare/HealthCare.tsx";
 import Pharmaceutical from "./Pages/Pharmaceutical/Pharmaceutical.tsx";
+import Finance from "./Pages/Finance/Finance.tsx";
 import "./index.css";
 import { BrowserRouter, Routes, Route } from "react-router";
 
@@ -20,6 +21,7 @@ createRoot(document.getElementById("root")!).render(
         <Route path="/manufacturing" element={<Manufacturing />} />
         <Route path="/healthcare" element={<HealthCare />} />
         <Route path="/pharmaceutical" element={<Pharmaceutical />} />
+        <Route path="/finance" element={<Finance />} />
       </Routes>
     </BrowserRouter>
   </>
