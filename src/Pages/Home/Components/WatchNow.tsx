@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-
-const WatchNow: React.FC = () => {
+interface ChildProps {
+  showText: boolean;
+}
+const WatchNow: React.FC<ChildProps> = ({ showText }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleOpen = () => setIsOpen(true);
@@ -21,6 +23,11 @@ const WatchNow: React.FC = () => {
           className="w-auto h-12 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer hover:scale-105 transition-transform"
           alt="Watch Now Button"
         />
+        {showText ? (
+          <b className="text-white font-bold absolute top-[92%] left-[10%] transform -translate-x-[2%]">
+            Life saving, Time saving, Resource saving app.
+          </b>
+        ) : null}
       </div>
 
       {/* ===== Popup Modal ===== */}

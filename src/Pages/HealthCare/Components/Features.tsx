@@ -17,8 +17,7 @@ const Features: React.FC = () => {
       title: "High Uptake",
       description: (
         <>
-          Over <strong>90%</strong> of staff use MyStaff app. A risk control
-          only works if it's used – and this one is.
+          In <strong>October 2025,</strong> Mid and South Essex NHS Foundation Trust celebrated a landmark achievement — 100% of its 16,900 staff successfully onboarded, marking a new standard for engagement and commitment across the organisation.
         </>
       ),
     },

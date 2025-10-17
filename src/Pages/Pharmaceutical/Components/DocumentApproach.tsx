@@ -2,7 +2,7 @@ import React from "react";
 import { Dot } from "lucide-react";
 const DocumentApproach: React.FC = () => {
   const approaches = [
-    "Designed around strict document governance – not just forms and checklists.",
+    "Designed around robust document governance – not just forms and checklists.",
     "AI-driven categorization and metadata reduce manual admin and improve searchability.",
     "Document lifecycle management includes author reminders, approval flows, and publishing oversight.",
     "Alerts and notifications ensure staff are always working from the latest version.",

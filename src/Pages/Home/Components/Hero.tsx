@@ -37,8 +37,7 @@ const Hero: React.FC = () => {
       <div className="relative container mx-auto px-4 sm:px-6 lg:px-20 py-16 z-20">
         <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-10">
           {/* ===== LEFT COLUMN (Original Text) ===== */}
-          <div
-            className="flex-1 max-w-2xl text-center md:text-left 2xl:-mt-64">
+          <div className="flex-1 max-w-2xl text-center md:text-left 2xl:-mt-64">
             <h2 className="text-xl mt-4 lg:mt-0 sm:text-3xl md:text-4xl font-normal mb-2 leading-tight text-white px-4 md:px-0">
               A critical tool to support {isWideScreen ? <br /> : " "}
               <span className="font-semibold">frontline governance</span>
@@ -64,12 +63,12 @@ const Hero: React.FC = () => {
             className="absolute -top-[35%] 2xl:-top-[190%] 2xl:right-[2%] right-[1%] max-w-[400px] hidden lg:block"
             // data-aos="fade-left"
           >
-            <WatchNow />
+            <WatchNow showText={true} />
           </div>
         </div>
 
         {/* ===== IMAGE IN BOTTOM RIGHT ===== */}
-        <div className="absolute -bottom-20 lg:-bottom-40 right-0 p-6 sm:p-10 hidden lg:block">
+        <div className="absolute -bottom-20 xl:-bottom-10 2xl:-bottom-40 right-0 p-6 sm:p-10 hidden lg:block">
           <img
             src="./diligram.webp"
             alt="Bottom Right Decoration"
