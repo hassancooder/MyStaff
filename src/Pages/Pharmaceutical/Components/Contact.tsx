@@ -26,7 +26,7 @@ const Contact: React.FC = () => {
     },
     {
       id: 6,
-      description: "90%+ staff uptake on live deployments",
+      description: "<90% staff uptake on live deployments",
     },
   ];
 

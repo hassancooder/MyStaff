@@ -10,7 +10,7 @@ const Contact: React.FC = () => {
     },
     {
       id: 2,
-      description: "60%+ reduction in unmanaged legacy documents",
+      description: "22% increase in compliance",
     },
     {
       id: 3,
@@ -26,7 +26,7 @@ const Contact: React.FC = () => {
     },
     {
       id: 6,
-      description: "90%+ staff uptake on live deployments",
+      description: "<90% staff uptake on live deployments",
     },
   ];
 

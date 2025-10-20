@@ -5,7 +5,7 @@ const Contact: React.FC = () => {
   const impacts = [
     {
       id: 1,
-      description: "90%+ staff uptake on live deployments",
+      description: "<90% staff uptake on live deployments",
     },
     {
       id: 2,
