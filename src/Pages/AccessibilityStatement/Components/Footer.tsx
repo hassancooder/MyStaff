@@ -1,0 +1,26 @@
+import React from "react";
+
+const Footer: React.FC = () => {
+  return (
+    <>
+      <footer className="bg-black py-5 h-auto w-full">
+        <div className="container mx-auto px-4">
+            <h2 className="text-md text-center text-white font-medium">
+              Accessibility Statement
+            </h2>
+        </div>
+      </footer>
+      <footer id="contact" className="bg-black border-t-2 border-gray-400 text-white pt-4 pb-6 h-auto w-full">
+        <div className="container mx-auto px-4">
+          <div className="text-center">
+            <h2 className="text-md font-bold sm:text-lg">
+              © 2025 Diligram. All rights reserved.
+            </h2>
+          </div>
+        </div>
+      </footer>
+    </>
+  );
+};
+
+export default Footer;
