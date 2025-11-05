@@ -4,8 +4,8 @@ import "aos/dist/aos.css";
 import Header from "./Components/Header";
 import Hero from "./Components/Hero";
 import Footer from "../Comps/Footer";
-import ContactSec from "./Components/ContactSec";
-function Contact() {
+import PolicyComponent from "./Components/PolicyComponent";
+function About() {
   useEffect((): void => {
     AOS.init();
   }, []);
@@ -14,11 +14,11 @@ function Contact() {
       <Header />
       <main>
         <Hero />
-        <ContactSec />
+        <PolicyComponent />
       </main>
       <Footer />
     </div>
   );
 }
 
-export default Contact;
+export default About;

@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 import Header from "./Components/Header";
 import Hero from "./Components/Hero";
 import Contact from "./Components/Contact";
-import Footer from "./Components/Footer";
+import Footer from "../Comps/Footer";
 import OurTeam from "./Components/OurTeam";
 function About() {
   useEffect((): void => {

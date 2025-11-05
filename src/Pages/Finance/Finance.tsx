@@ -8,7 +8,7 @@ import DocumentApproach from "./Components/DocumentApproach";
 import SavingsCalculator from "./Components/SavingsCalculator";
 import ProductModules from "./Components/ProductModules";
 import Awards from "./Components/Awards";
-import Footer from "./Components/Footer";
+import Footer from "../Comps/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
