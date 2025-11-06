@@ -2,10 +2,6 @@ const AccessibilityComponent = () => {
   return (
     <section className="pt-12 pb-32 px-6 lg:px-20 bg-gray-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-20">
-        <div className="mb-8">
-          <h1 className="text-4xl font-bold mb-2">Privacy Policy</h1>
-        </div>
-
         <section className="mb-8">
           <h2 className="text-3xl font-semibold mb-4">INTRODUCTION</h2>
           <p className="mb-4">
@@ -20,7 +16,7 @@ const AccessibilityComponent = () => {
         </section>
 
         <section className="mb-8">
-          <h2 className="text-3xl text-blue-600 font-semibold mb-4">
+          <h2 className="text-3xl  font-semibold mb-4">
             WHEN DOES THIS PRIVACY POLICY APPLY
           </h2>
           <p>
@@ -33,7 +29,7 @@ const AccessibilityComponent = () => {
         </section>
 
         <section className="mb-8">
-          <h2 className="text-3xl text-blue-600 font-semibold mb-4">
+          <h2 className="text-3xl  font-semibold mb-4">
             WHO WE ARE
           </h2>
           <p>
@@ -45,7 +41,7 @@ const AccessibilityComponent = () => {
         </section>
 
         <section className="mb-8">
-          <h2 className="text-3xl text-blue-600 font-semibold mb-4">
+          <h2 className="text-3xl  font-semibold mb-4">
             OUR VALUES
           </h2>
           <p className="mb-4">
@@ -61,7 +57,7 @@ const AccessibilityComponent = () => {
         </section>
 
         <section className="mb-8">
-          <h2 className="text-3xl text-blue-600 font-semibold mb-4">
+          <h2 className="text-3xl  font-semibold mb-4">
             NATURE OF BUSINESS
           </h2>
           <p className="mb-4">
@@ -81,7 +77,7 @@ const AccessibilityComponent = () => {
         </section>
 
         <section className="mb-8">
-          <h2 className="text-3xl text-blue-600 font-semibold mb-4">
+          <h2 className="text-3xl  font-semibold mb-4">
             INFORMATION WE COLLECT
           </h2>
           <p className="mb-4">
@@ -108,7 +104,7 @@ const AccessibilityComponent = () => {
         </section>
 
         <section className="mb-8">
-          <h2 className="text-3xl text-blue-600 font-semibold mb-4">
+          <h2 className="text-3xl  font-semibold mb-4">
             DATA PROCESSING AND RETENTION
           </h2>
           <p className="mb-4">
@@ -157,7 +153,7 @@ const AccessibilityComponent = () => {
         </section>
 
         <section className="mb-8">
-          <h2 className="text-3xl text-blue-600 font-semibold mb-4">
+          <h2 className="text-3xl  font-semibold mb-4">
             BUSINESS TRANSFERS AND LEGAL REQUIREMENTS
           </h2>
           <p>
@@ -175,7 +171,7 @@ const AccessibilityComponent = () => {
         </section>
 
         <section className="mb-8">
-          <h2 className="text-3xl text-blue-600 font-semibold mb-4">
+          <h2 className="text-3xl  font-semibold mb-4">
             THIRD-PARTY ANALYTICS
           </h2>
           <p className="mb-4">
@@ -191,14 +187,14 @@ const AccessibilityComponent = () => {
           </p>
           <a
             href="https://www.google.com/analytics/terms/gb.html"
-            className="text-blue-600 hover:underline block mt-2"
+            className=" hover:underline block mt-2"
           >
             Google Analytics — https://www.google.com/analytics/terms/gb.html
           </a>
         </section>
 
         <section className="mb-8">
-          <h2 className="text-3xl text-blue-600 font-semibold mb-4">
+          <h2 className="text-3xl  font-semibold mb-4">
             COOKIE POLICY
           </h2>
           <p className="mb-2 font-semibold">Effective Date: 19 June 2023</p>
@@ -333,7 +329,7 @@ const AccessibilityComponent = () => {
 
         {/* Website Accessibility Policy Section */}
         <section className="mb-8">
-          <h2 className="text-3xl text-blue-600 font-semibold mb-4">
+          <h2 className="text-3xl  font-semibold mb-4">
             Website Accessibility Policy
           </h2>
           <p className="mb-2 font-semibold">Effective Date: 19 June 2023</p>
@@ -495,7 +491,7 @@ const AccessibilityComponent = () => {
         </section>
 
         <section className="mb-8">
-          <h2 className="text-3xl text-blue-600 font-semibold mb-4">
+          <h2 className="text-3xl  font-semibold mb-4">
             HOW WE PROTECT YOUR INFORMATION
           </h2>
           <p className="mb-4">
@@ -547,7 +543,7 @@ const AccessibilityComponent = () => {
         </section>
 
         <section className="mb-8">
-          <h2 className="text-3xl text-blue-600 font-semibold mb-4">
+          <h2 className="text-3xl  font-semibold mb-4">
             YOUR RIGHTS
           </h2>
           <p className="mb-4">
@@ -606,7 +602,7 @@ const AccessibilityComponent = () => {
         </section>
 
         <section className="mb-8">
-          <h2 className="text-3xl text-blue-600 font-semibold mb-4">
+          <h2 className="text-3xl  font-semibold mb-4">
             CHILDREN
           </h2>
           <p>
@@ -621,7 +617,7 @@ const AccessibilityComponent = () => {
         </section>
 
         <section className="mb-8">
-          <h2 className="text-3xl text-blue-600 font-semibold mb-4">
+          <h2 className="text-3xl  font-semibold mb-4">
             CHANGES TO THIS PRIVACY POLICY
           </h2>
           <p>
@@ -636,7 +632,7 @@ const AccessibilityComponent = () => {
         </section>
 
         <section className="mb-8">
-          <h2 className="text-3xl text-blue-600 font-semibold mb-4">
+          <h2 className="text-3xl  font-semibold mb-4">
             CONTACTING US
           </h2>
           <p>
@@ -659,7 +655,7 @@ const AccessibilityComponent = () => {
 
         {/* Modern Slavery and Human Trafficking Statement Section */}
         <section className="mb-8">
-          <h2 className="text-3xl text-blue-600 font-semibold mb-4">
+          <h2 className="text-3xl  font-semibold mb-4">
             Modern Slavery and Human Trafficking Statement
           </h2>
 
