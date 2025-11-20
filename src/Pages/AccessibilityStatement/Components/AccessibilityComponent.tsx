@@ -33,8 +33,7 @@ const AccessibilityComponent = () => {
           </h3>
           <p className="text-lg text-blue-600 mb-8">
             Some embedded third-party content or legacy attachments may not
-            fully meet WCAG criteria. We will work with NBT to provide
-            accessible alternatives on request.
+            fully meet WCAG criteria. We will work with our customers to provide accessible alternatives on request.
           </p>
 
           <h3 className="text-xl font-semibold text-blue-600">
