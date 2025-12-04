@@ -7,6 +7,7 @@ import Manufacturing from "./Pages/Manufacturing/Manufacturing.tsx";
 import HealthCare from "./Pages/HealthCare/HealthCare.tsx";
 import Pharmaceutical from "./Pages/Pharmaceutical/Pharmaceutical.tsx";
 import Finance from "./Pages/Finance/Finance.tsx";
+import Education from "./Pages/Education/Education.tsx";
 import AccessibilityStatement from "./Pages/AccessibilityStatement/AccessibilityStatement.tsx";
 import PrivacyPolicy from "./Pages/PrivacyPolicy/PrivacyPolicy.tsx";
 import "./index.css";
@@ -24,6 +25,7 @@ createRoot(document.getElementById("root")!).render(
         <Route path="/healthcare" element={<HealthCare />} />
         <Route path="/pharmaceutical" element={<Pharmaceutical />} />
         <Route path="/finance" element={<Finance />} />
+        <Route path="/education" element={<Education />} />
         <Route
           path="/accessibility-statement"
           element={<AccessibilityStatement />}

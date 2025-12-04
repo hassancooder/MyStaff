@@ -87,6 +87,22 @@ const PageLinks: React.FC = () => {
                 Finance
               </span>
             </Link>
+            <Link
+              to="/education"
+              className="relative flex items-center gap-4 p-1.5 lg:p-4 ring-1 ring-blue-600 hover:bg-blue-600 hover:ring-transparent rounded-full transition group"
+            >
+              {/* Icon outside button */}
+              <div className="absolute -left-8 w-12 lg:w-16 h-12 lg:h-16 flex items-center justify-center rounded-full  ring-1 ring-blue-600 bg-white">
+                <img
+                  src="./education.webp"
+                  alt="Education"
+                  className="w-7 lg:w-8 h-7 lg:h-8 object-contain"
+                />
+              </div>
+              <span className="ml-10 text-md lg:text-lg font-medium text-blue-900 group-hover:text-white">
+                Education
+              </span>
+            </Link>
           </div>
         </div>
       </div>
